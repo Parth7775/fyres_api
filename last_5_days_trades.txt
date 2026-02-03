@@ -1,0 +1,74 @@
+
+========================================
+Running for Date: 2026-01-30
+========================================
+Nifty Spot: 25320.65
+Scanning 26203 strikes around 25300 for 2026-01-30...
+Selected Call: NSE:NIFTY2620324900CE @ 500.6
+Selected Put: NSE:NIFTY2620325800PE @ 503.3
+\nRunning Strategy on NSE:NIFTY2620324900CE for 2026-01-30
+Fetching data from 2026-01-25 to 2026-01-30 for warm-up...
+Processing trading day starting at index 564 (188 candles)...
+{'time': datetime.time(13, 47), 'type': 'ENTRY_SHORT', 'price': 469.8, 'sl': 491.7, 'trigger_rsi': 72.91759564268632, 'confirmed_at_step': 1}
+{'time': datetime.time(13, 53), 'type': 'EXIT_SL', 'price': 512.5, 'pnl': -42.69999999999999}
+\nRunning Strategy on NSE:NIFTY2620325800PE for 2026-01-30
+Fetching data from 2026-01-25 to 2026-01-30 for warm-up...
+Processing trading day starting at index 564 (188 candles)...
+{'time': datetime.time(9, 25), 'type': 'ENTRY_SHORT', 'price': 551.1, 'sl': 580.35, 'trigger_rsi': 89.42139350618662, 'confirmed_at_step': 1}
+{'time': datetime.time(9, 29), 'type': 'EXIT_SL', 'price': 591.7, 'pnl': -40.60000000000002}
+{'time': datetime.time(9, 35), 'type': 'ENTRY_SHORT', 'price': 532.25, 'sl': 578.7, 'trigger_rsi': 74.62968522594686, 'confirmed_at_step': 1}
+{'time': datetime.time(11, 15), 'type': 'EXIT_SL', 'price': 580, 'pnl': -47.75}
+
+========================================
+Running for Date: 2026-01-29
+========================================
+Nifty Spot: 25418.9
+Scanning 26203 strikes around 25400 for 2026-01-29...
+Selected Call: NSE:NIFTY2620325000CE @ 505.1
+Selected Put: NSE:NIFTY2620325900PE @ 488.95
+\nRunning Strategy on NSE:NIFTY2620325000CE for 2026-01-29
+Fetching data from 2026-01-24 to 2026-01-29 for warm-up...
+Processing trading day starting at index 376 (188 candles)...
+{'time': datetime.time(11, 25), 'type': 'ENTRY_SHORT', 'price': 378, 'sl': 410.9, 'trigger_rsi': 70.68940360059894, 'confirmed_at_step': 1}
+{'time': datetime.time(12, 47), 'type': 'EXIT_SL', 'price': 411.05, 'pnl': -33.05000000000001}
+{'time': datetime.time(13, 41), 'type': 'ENTRY_SHORT', 'price': 478.05, 'sl': 491, 'trigger_rsi': 70.30467635808209, 'confirmed_at_step': 1}
+{'time': datetime.time(13, 43), 'type': 'EXIT_SL', 'price': 502.4, 'pnl': -24.349999999999966}
+{'time': datetime.time(14, 3), 'type': 'ENTRY_SHORT', 'price': 501.15, 'sl': 519.45, 'trigger_rsi': 71.41099735916099, 'confirmed_at_step': 2}
+{'time': datetime.time(14, 31), 'type': 'EXIT_SL', 'price': 523.6, 'pnl': -22.450000000000045}
+\nRunning Strategy on NSE:NIFTY2620325900PE for 2026-01-29
+Fetching data from 2026-01-24 to 2026-01-29 for warm-up...
+Processing trading day starting at index 376 (188 candles)...
+{'time': datetime.time(10, 3), 'type': 'ENTRY_SHORT', 'price': 722, 'sl': 736.55, 'trigger_rsi': 70.16663281588411, 'confirmed_at_step': 1}
+{'time': datetime.time(15, 1), 'type': 'EXIT_TIME', 'price': 492.25, 'pnl': 229.75}
+
+========================================
+Running for Date: 2026-01-28
+========================================
+Nifty Spot: 25342.75
+Scanning 26203 strikes around 25350 for 2026-01-28...
+Selected Call: NSE:NIFTY2620324950CE @ 493.45
+Selected Put: NSE:NIFTY2620325800PE @ 485.7
+\nRunning Strategy on NSE:NIFTY2620324950CE for 2026-01-28
+Fetching data from 2026-01-23 to 2026-01-28 for warm-up...
+Processing trading day starting at index 376 (188 candles)...
+{'time': datetime.time(9, 25), 'type': 'ENTRY_SHORT', 'price': 535, 'sl': 550.5, 'trigger_rsi': 83.44516639049968, 'confirmed_at_step': 1}
+{'time': datetime.time(15, 1), 'type': 'EXIT_TIME', 'price': 496.95, 'pnl': 38.05000000000001}
+\nRunning Strategy on NSE:NIFTY2620325800PE for 2026-01-28
+Fetching data from 2026-01-23 to 2026-01-28 for warm-up...
+Processing trading day starting at index 376 (188 candles)...
+{'time': datetime.time(12, 43), 'type': 'ENTRY_SHORT', 'price': 537.8, 'sl': 556.05, 'trigger_rsi': 71.88336986574076, 'confirmed_at_step': 1}
+{'time': datetime.time(12, 59), 'type': 'EXIT_SL', 'price': 556.45, 'pnl': -18.65000000000009}
+{'time': datetime.time(13, 53), 'type': 'ENTRY_SHORT', 'price': 598.35, 'sl': 631.15, 'trigger_rsi': 73.85974361954774, 'confirmed_at_step': 2}
+{'time': datetime.time(15, 1), 'type': 'EXIT_TIME', 'price': 486.9, 'pnl': 111.45000000000005}
+
+========================================
+Running for Date: 2026-01-27
+========================================
+Nifty Spot: 25175.4
+Scanning 26203 strikes around 25200 for 2026-01-27...
+
+========================================
+Running for Date: 2026-01-23
+========================================
+
+Total P&L over 5 days: 149.69999999999993

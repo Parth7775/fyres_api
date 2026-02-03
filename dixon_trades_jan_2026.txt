@@ -1,0 +1,327 @@
+Fetching data for NSE:DIXON-EQ from 2026-01-01 to 2026-01-31...
+Fetched 2500 candles.
+
+--- TRADES ---
+ID    | Time                 | Action          | Price      | PnL        | Notes
+1     | 2026-01-01 09:18:00  | ENTER LONG      | 12158.00   | 0.00       | Fresh Entry (Close 12158 > VWAP 12148.52)
+1     | 2026-01-01 09:21:00  | EXIT (SL)       | 12120.00   | -38.00     | SL Hit (Close 12120 <= SL 12136.00)
+2     | 2026-01-01 09:21:00  | ENTER SHORT     | 12120.00   | 0.00       | SL Reversal Entry
+2     | 2026-01-01 14:51:00  | EXIT (SL)       | 11945.00   | 175.00     | SL Hit (Close 11945 >= SL 11934.57)
+3     | 2026-01-01 14:51:00  | ENTER LONG      | 11945.00   | 0.00       | SL Reversal Entry
+3     | 2026-01-01 15:00:00  | EXIT (Square Off) | 11986.00   | 41.00      | Auto Square Off at 15:00:00
+4     | 2026-01-02 09:15:00  | ENTER LONG      | 12225.00   | 0.00       | Fresh Entry (Close 12225 > VWAP 12217.67)
+4     | 2026-01-02 09:21:00  | EXIT (Reversal) | 12208.00   | -17.00     | Reversed to SHORT
+5     | 2026-01-02 09:21:00  | ENTER SHORT     | 12208.00   | 0.00       | Reversal Entry (Close 12208 < VWAP 12221.91)
+5     | 2026-01-02 09:27:00  | EXIT (SL)       | 12264.00   | -56.00     | SL Hit (Close 12264 >= SL 12228.00)
+6     | 2026-01-02 09:27:00  | ENTER LONG      | 12264.00   | 0.00       | SL Reversal Entry
+6     | 2026-01-02 09:33:00  | EXIT (Reversal) | 12218.00   | -46.00     | Reversed to SHORT
+7     | 2026-01-02 09:33:00  | ENTER SHORT     | 12218.00   | 0.00       | Reversal Entry (Close 12218 < VWAP 12232.37)
+7     | 2026-01-02 10:12:00  | EXIT (SL)       | 12231.00   | -13.00     | SL Hit (Close 12231 >= SL 12213.91)
+8     | 2026-01-02 10:12:00  | ENTER LONG      | 12231.00   | 0.00       | SL Reversal Entry
+8     | 2026-01-02 10:15:00  | EXIT (Reversal) | 12211.00   | -20.00     | Reversed to SHORT
+9     | 2026-01-02 10:15:00  | ENTER SHORT     | 12211.00   | 0.00       | Reversal Entry (Close 12211 < VWAP 12214.21)
+9     | 2026-01-02 10:24:00  | EXIT (Reversal) | 12226.00   | -15.00     | Reversed to LONG
+10    | 2026-01-02 10:24:00  | ENTER LONG      | 12226.00   | 0.00       | Reversal Entry (Close 12226 > VWAP 12214.11)
+10    | 2026-01-02 10:51:00  | EXIT (SL)       | 12184.00   | -42.00     | SL Hit (Close 12184 <= SL 12218.13)
+11    | 2026-01-02 10:51:00  | ENTER SHORT     | 12184.00   | 0.00       | SL Reversal Entry
+11    | 2026-01-02 12:24:00  | EXIT (SL)       | 12195.00   | -11.00     | SL Hit (Close 12195 >= SL 12191.43)
+12    | 2026-01-02 12:24:00  | ENTER LONG      | 12195.00   | 0.00       | SL Reversal Entry
+12    | 2026-01-02 12:27:00  | EXIT (Reversal) | 12170.00   | -25.00     | Reversed to SHORT
+13    | 2026-01-02 12:27:00  | ENTER SHORT     | 12170.00   | 0.00       | Reversal Entry (Close 12170 < VWAP 12190.84)
+13    | 2026-01-02 12:33:00  | EXIT (Reversal) | 12196.00   | -26.00     | Reversed to LONG
+14    | 2026-01-02 12:33:00  | ENTER LONG      | 12196.00   | 0.00       | Reversal Entry (Close 12196 > VWAP 12190.88)
+14    | 2026-01-02 12:36:00  | EXIT (SL)       | 12172.00   | -24.00     | SL Hit (Close 12172 <= SL 12179.00)
+15    | 2026-01-02 12:36:00  | ENTER SHORT     | 12172.00   | 0.00       | SL Reversal Entry
+15    | 2026-01-02 14:06:00  | EXIT (SL)       | 12138.00   | 34.00      | SL Hit (Close 12138 >= SL 12130.33)
+16    | 2026-01-02 14:06:00  | ENTER LONG      | 12138.00   | 0.00       | SL Reversal Entry
+16    | 2026-01-02 14:09:00  | EXIT (Reversal) | 12122.00   | -16.00     | Reversed to SHORT
+17    | 2026-01-02 14:09:00  | ENTER SHORT     | 12122.00   | 0.00       | Reversal Entry (Close 12122 < VWAP 12130.34)
+17    | 2026-01-02 14:12:00  | EXIT (Reversal) | 12145.00   | -23.00     | Reversed to LONG
+18    | 2026-01-02 14:12:00  | ENTER LONG      | 12145.00   | 0.00       | Reversal Entry (Close 12145 > VWAP 12130.47)
+18    | 2026-01-02 14:15:00  | EXIT (Reversal) | 12129.00   | -16.00     | Reversed to SHORT
+19    | 2026-01-02 14:15:00  | ENTER SHORT     | 12129.00   | 0.00       | Reversal Entry (Close 12129 < VWAP 12130.50)
+19    | 2026-01-02 14:21:00  | EXIT (Reversal) | 12132.00   | -3.00      | Reversed to LONG
+20    | 2026-01-02 14:21:00  | ENTER LONG      | 12132.00   | 0.00       | Reversal Entry (Close 12132 > VWAP 12130.50)
+20    | 2026-01-02 15:00:00  | EXIT (Square Off) | 12215.00   | 83.00      | Auto Square Off at 15:00:00
+21    | 2026-01-05 09:15:00  | ENTER SHORT     | 12203.00   | 0.00       | Fresh Entry (Close 12203 < VWAP 12216.33)
+21    | 2026-01-05 09:18:00  | EXIT (Reversal) | 12245.00   | -42.00     | Reversed to LONG
+22    | 2026-01-05 09:18:00  | ENTER LONG      | 12245.00   | 0.00       | Reversal Entry (Close 12245 > VWAP 12221.91)
+22    | 2026-01-05 09:27:00  | EXIT (Reversal) | 12213.00   | -32.00     | Reversed to SHORT
+23    | 2026-01-05 09:27:00  | ENTER SHORT     | 12213.00   | 0.00       | Reversal Entry (Close 12213 < VWAP 12232.30)
+23    | 2026-01-05 10:12:00  | EXIT (SL)       | 12209.00   | 4.00       | SL Hit (Close 12209 >= SL 12193.91)
+24    | 2026-01-05 10:12:00  | ENTER LONG      | 12209.00   | 0.00       | SL Reversal Entry
+24    | 2026-01-05 10:15:00  | EXIT (Reversal) | 12184.00   | -25.00     | Reversed to SHORT
+25    | 2026-01-05 10:15:00  | ENTER SHORT     | 12184.00   | 0.00       | Reversal Entry (Close 12184 < VWAP 12193.97)
+25    | 2026-01-05 10:21:00  | EXIT (Reversal) | 12195.00   | -11.00     | Reversed to LONG
+26    | 2026-01-05 10:21:00  | ENTER LONG      | 12195.00   | 0.00       | Reversal Entry (Close 12195 > VWAP 12193.64)
+26    | 2026-01-05 10:36:00  | EXIT (Reversal) | 12176.00   | -19.00     | Reversed to SHORT
+27    | 2026-01-05 10:36:00  | ENTER SHORT     | 12176.00   | 0.00       | Reversal Entry (Close 12176 < VWAP 12195.91)
+27    | 2026-01-05 10:45:00  | EXIT (Reversal) | 12211.00   | -35.00     | Reversed to LONG
+28    | 2026-01-05 10:45:00  | ENTER LONG      | 12211.00   | 0.00       | Reversal Entry (Close 12211 > VWAP 12195.21)
+28    | 2026-01-05 10:57:00  | EXIT (Reversal) | 12185.00   | -26.00     | Reversed to SHORT
+29    | 2026-01-05 10:57:00  | ENTER SHORT     | 12185.00   | 0.00       | Reversal Entry (Close 12185 < VWAP 12197.61)
+29    | 2026-01-05 12:21:00  | EXIT (SL)       | 12194.00   | -9.00      | SL Hit (Close 12194 >= SL 12190.38)
+30    | 2026-01-05 12:21:00  | ENTER LONG      | 12194.00   | 0.00       | SL Reversal Entry
+30    | 2026-01-05 12:39:00  | EXIT (SL)       | 12186.00   | -8.00      | SL Hit (Close 12186 <= SL 12191.89)
+31    | 2026-01-05 12:39:00  | ENTER SHORT     | 12186.00   | 0.00       | SL Reversal Entry
+31    | 2026-01-05 12:42:00  | EXIT (Reversal) | 12195.00   | -9.00      | Reversed to LONG
+32    | 2026-01-05 12:42:00  | ENTER LONG      | 12195.00   | 0.00       | Reversal Entry (Close 12195 > VWAP 12191.88)
+32    | 2026-01-05 13:09:00  | EXIT (SL)       | 12192.00   | -3.00      | SL Hit (Close 12192 <= SL 12192.96)
+33    | 2026-01-05 13:09:00  | ENTER SHORT     | 12192.00   | 0.00       | SL Reversal Entry
+33    | 2026-01-05 15:00:00  | EXIT (Square Off) | 12053.00   | 139.00     | Auto Square Off at 15:00:00
+34    | 2026-01-06 09:15:00  | ENTER LONG      | 12010.00   | 0.00       | Fresh Entry (Close 12010 > VWAP 12007.00)
+34    | 2026-01-06 09:21:00  | EXIT (Reversal) | 11987.00   | -23.00     | Reversed to SHORT
+35    | 2026-01-06 09:21:00  | ENTER SHORT     | 11987.00   | 0.00       | Reversal Entry (Close 11987 < VWAP 12007.14)
+35    | 2026-01-06 09:33:00  | EXIT (Reversal) | 12012.00   | -25.00     | Reversed to LONG
+36    | 2026-01-06 09:33:00  | ENTER LONG      | 12012.00   | 0.00       | Reversal Entry (Close 12012 > VWAP 12000.76)
+36    | 2026-01-06 09:36:00  | EXIT (Reversal) | 11985.00   | -27.00     | Reversed to SHORT
+37    | 2026-01-06 09:36:00  | ENTER SHORT     | 11985.00   | 0.00       | Reversal Entry (Close 11985 < VWAP 12000.28)
+37    | 2026-01-06 09:51:00  | EXIT (Reversal) | 12000.00   | -15.00     | Reversed to LONG
+38    | 2026-01-06 09:51:00  | ENTER LONG      | 12000.00   | 0.00       | Reversal Entry (Close 12000 > VWAP 11996.10)
+38    | 2026-01-06 10:09:00  | EXIT (SL)       | 11982.00   | -18.00     | SL Hit (Close 11982 <= SL 12002.54)
+39    | 2026-01-06 10:09:00  | ENTER SHORT     | 11982.00   | 0.00       | SL Reversal Entry
+39    | 2026-01-06 15:00:00  | EXIT (Square Off) | 11768.00   | 214.00     | Auto Square Off at 15:00:00
+40    | 2026-01-07 09:15:00  | ENTER LONG      | 11585.00   | 0.00       | Fresh Entry (Close 11585 > VWAP 11573.67)
+40    | 2026-01-07 09:21:00  | EXIT (Reversal) | 11547.00   | -38.00     | Reversed to SHORT
+41    | 2026-01-07 09:21:00  | ENTER SHORT     | 11547.00   | 0.00       | Reversal Entry (Close 11547 < VWAP 11570.70)
+41    | 2026-01-07 09:27:00  | EXIT (Reversal) | 11595.00   | -48.00     | Reversed to LONG
+42    | 2026-01-07 09:27:00  | ENTER LONG      | 11595.00   | 0.00       | Reversal Entry (Close 11595 > VWAP 11567.57)
+42    | 2026-01-07 12:00:00  | EXIT (SL)       | 11753.00   | 158.00     | SL Hit (Close 11753 <= SL 11768.28)
+43    | 2026-01-07 12:00:00  | ENTER SHORT     | 11753.00   | 0.00       | SL Reversal Entry
+43    | 2026-01-07 14:48:00  | EXIT (SL)       | 11760.00   | -7.00      | SL Hit (Close 11760 >= SL 11757.73)
+44    | 2026-01-07 14:48:00  | ENTER LONG      | 11760.00   | 0.00       | SL Reversal Entry
+44    | 2026-01-07 15:00:00  | EXIT (Square Off) | 11765.00   | 5.00       | Auto Square Off at 15:00:00
+45    | 2026-01-08 09:15:00  | ENTER LONG      | 11789.00   | 0.00       | Fresh Entry (Close 11789 > VWAP 11764.00)
+45    | 2026-01-08 09:24:00  | EXIT (Reversal) | 11804.00   | 15.00      | Reversed to SHORT
+46    | 2026-01-08 09:24:00  | ENTER SHORT     | 11804.00   | 0.00       | Reversal Entry (Close 11804 < VWAP 11815.90)
+46    | 2026-01-08 09:51:00  | EXIT (SL)       | 11819.00   | -15.00     | SL Hit (Close 11819 >= SL 11795.95)
+47    | 2026-01-08 09:51:00  | ENTER LONG      | 11819.00   | 0.00       | SL Reversal Entry
+47    | 2026-01-08 10:09:00  | EXIT (SL)       | 11785.00   | -34.00     | SL Hit (Close 11785 <= SL 11804.52)
+48    | 2026-01-08 10:09:00  | ENTER SHORT     | 11785.00   | 0.00       | SL Reversal Entry
+48    | 2026-01-08 10:15:00  | EXIT (Reversal) | 11806.00   | -21.00     | Reversed to LONG
+49    | 2026-01-08 10:15:00  | ENTER LONG      | 11806.00   | 0.00       | Reversal Entry (Close 11806 > VWAP 11804.07)
+49    | 2026-01-08 10:18:00  | EXIT (SL)       | 11791.00   | -15.00     | SL Hit (Close 11791 <= SL 11797.00)
+50    | 2026-01-08 10:18:00  | ENTER SHORT     | 11791.00   | 0.00       | SL Reversal Entry
+50    | 2026-01-08 10:24:00  | EXIT (Reversal) | 11804.00   | -13.00     | Reversed to LONG
+51    | 2026-01-08 10:24:00  | ENTER LONG      | 11804.00   | 0.00       | Reversal Entry (Close 11804 > VWAP 11803.72)
+51    | 2026-01-08 10:39:00  | EXIT (Reversal) | 11800.00   | -4.00      | Reversed to SHORT
+52    | 2026-01-08 10:39:00  | ENTER SHORT     | 11800.00   | 0.00       | Reversal Entry (Close 11800 < VWAP 11804.44)
+52    | 2026-01-08 10:48:00  | EXIT (Reversal) | 11807.00   | -7.00      | Reversed to LONG
+53    | 2026-01-08 10:48:00  | ENTER LONG      | 11807.00   | 0.00       | Reversal Entry (Close 11807 > VWAP 11797.95)
+53    | 2026-01-08 11:00:00  | EXIT (Reversal) | 11799.00   | -8.00      | Reversed to SHORT
+54    | 2026-01-08 11:00:00  | ENTER SHORT     | 11799.00   | 0.00       | Reversal Entry (Close 11799 < VWAP 11801.33)
+54    | 2026-01-08 11:03:00  | EXIT (Reversal) | 11805.00   | -6.00      | Reversed to LONG
+55    | 2026-01-08 11:03:00  | ENTER LONG      | 11805.00   | 0.00       | Reversal Entry (Close 11805 > VWAP 11801.35)
+55    | 2026-01-08 11:48:00  | EXIT (SL)       | 11803.00   | -2.00      | SL Hit (Close 11803 <= SL 11805.05)
+56    | 2026-01-08 11:48:00  | ENTER SHORT     | 11803.00   | 0.00       | SL Reversal Entry
+56    | 2026-01-08 11:51:00  | EXIT (SL)       | 11825.00   | -22.00     | SL Hit (Close 11825 >= SL 11820.00)
+57    | 2026-01-08 11:51:00  | ENTER LONG      | 11825.00   | 0.00       | SL Reversal Entry
+57    | 2026-01-08 11:54:00  | EXIT (SL)       | 11780.00   | -45.00     | SL Hit (Close 11780 <= SL 11793.00)
+58    | 2026-01-08 11:54:00  | ENTER SHORT     | 11780.00   | 0.00       | SL Reversal Entry
+58    | 2026-01-08 12:06:00  | EXIT (Reversal) | 11817.00   | -37.00     | Reversed to LONG
+59    | 2026-01-08 12:06:00  | ENTER LONG      | 11817.00   | 0.00       | Reversal Entry (Close 11817 > VWAP 11802.95)
+59    | 2026-01-08 15:00:00  | EXIT (Square Off) | 11974.00   | 157.00     | Auto Square Off at 15:00:00
+60    | 2026-01-09 09:15:00  | ENTER LONG      | 11970.00   | 0.00       | Fresh Entry (Close 11970 > VWAP 11932.33)
+60    | 2026-01-09 09:18:00  | EXIT (Reversal) | 11907.00   | -63.00     | Reversed to SHORT
+61    | 2026-01-09 09:18:00  | ENTER SHORT     | 11907.00   | 0.00       | Reversal Entry (Close 11907 < VWAP 11930.79)
+61    | 2026-01-09 09:45:00  | EXIT (SL)       | 11872.00   | 35.00      | SL Hit (Close 11872 >= SL 11860.63)
+62    | 2026-01-09 09:45:00  | ENTER LONG      | 11872.00   | 0.00       | SL Reversal Entry
+62    | 2026-01-09 11:15:00  | EXIT (SL)       | 11907.00   | 35.00      | SL Hit (Close 11907 <= SL 11918.21)
+63    | 2026-01-09 11:15:00  | ENTER SHORT     | 11907.00   | 0.00       | SL Reversal Entry
+63    | 2026-01-09 11:21:00  | EXIT (SL)       | 11950.00   | -43.00     | SL Hit (Close 11950 >= SL 11932.00)
+64    | 2026-01-09 11:21:00  | ENTER LONG      | 11950.00   | 0.00       | SL Reversal Entry
+64    | 2026-01-09 11:51:00  | EXIT (SL)       | 11922.00   | -28.00     | SL Hit (Close 11922 <= SL 11922.26)
+65    | 2026-01-09 11:51:00  | ENTER SHORT     | 11922.00   | 0.00       | SL Reversal Entry
+65    | 2026-01-09 11:54:00  | EXIT (Reversal) | 11925.00   | -3.00      | Reversed to LONG
+66    | 2026-01-09 11:54:00  | ENTER LONG      | 11925.00   | 0.00       | Reversal Entry (Close 11925 > VWAP 11922.30)
+66    | 2026-01-09 12:21:00  | EXIT (SL)       | 11918.00   | -7.00      | SL Hit (Close 11918 <= SL 11922.69)
+67    | 2026-01-09 12:21:00  | ENTER SHORT     | 11918.00   | 0.00       | SL Reversal Entry
+67    | 2026-01-09 12:33:00  | EXIT (Reversal) | 11924.00   | -6.00      | Reversed to LONG
+68    | 2026-01-09 12:33:00  | ENTER LONG      | 11924.00   | 0.00       | Reversal Entry (Close 11924 > VWAP 11921.72)
+68    | 2026-01-09 12:39:00  | EXIT (SL)       | 11912.00   | -12.00     | SL Hit (Close 11912 <= SL 11915.00)
+69    | 2026-01-09 12:39:00  | ENTER SHORT     | 11912.00   | 0.00       | SL Reversal Entry
+69    | 2026-01-09 12:51:00  | EXIT (Reversal) | 11924.00   | -12.00     | Reversed to LONG
+70    | 2026-01-09 12:51:00  | ENTER LONG      | 11924.00   | 0.00       | Reversal Entry (Close 11924 > VWAP 11921.53)
+70    | 2026-01-09 12:54:00  | EXIT (Reversal) | 11921.00   | -3.00      | Reversed to SHORT
+71    | 2026-01-09 12:54:00  | ENTER SHORT     | 11921.00   | 0.00       | Reversal Entry (Close 11921 < VWAP 11921.53)
+71    | 2026-01-09 12:57:00  | EXIT (Reversal) | 11924.00   | -3.00      | Reversed to LONG
+72    | 2026-01-09 12:57:00  | ENTER LONG      | 11924.00   | 0.00       | Reversal Entry (Close 11924 > VWAP 11921.53)
+72    | 2026-01-09 13:00:00  | EXIT (Reversal) | 11910.00   | -14.00     | Reversed to SHORT
+73    | 2026-01-09 13:00:00  | ENTER SHORT     | 11910.00   | 0.00       | Reversal Entry (Close 11910 < VWAP 11921.52)
+73    | 2026-01-09 13:18:00  | EXIT (SL)       | 11939.00   | -29.00     | SL Hit (Close 11939 >= SL 11921.09)
+74    | 2026-01-09 13:18:00  | ENTER LONG      | 11939.00   | 0.00       | SL Reversal Entry
+74    | 2026-01-09 13:42:00  | EXIT (SL)       | 11912.00   | -27.00     | SL Hit (Close 11912 <= SL 11921.92)
+75    | 2026-01-09 13:42:00  | ENTER SHORT     | 11912.00   | 0.00       | SL Reversal Entry
+75    | 2026-01-09 13:57:00  | EXIT (SL)       | 11938.00   | -26.00     | SL Hit (Close 11938 >= SL 11931.00)
+76    | 2026-01-09 13:57:00  | ENTER LONG      | 11938.00   | 0.00       | SL Reversal Entry
+76    | 2026-01-09 14:06:00  | EXIT (SL)       | 11913.00   | -25.00     | SL Hit (Close 11913 <= SL 11914.00)
+77    | 2026-01-09 14:06:00  | ENTER SHORT     | 11913.00   | 0.00       | SL Reversal Entry
+77    | 2026-01-09 14:45:00  | EXIT (SL)       | 11925.00   | -12.00     | SL Hit (Close 11925 >= SL 11914.11)
+78    | 2026-01-09 14:45:00  | ENTER LONG      | 11925.00   | 0.00       | SL Reversal Entry
+78    | 2026-01-09 14:48:00  | EXIT (Reversal) | 11910.00   | -15.00     | Reversed to SHORT
+79    | 2026-01-09 14:48:00  | ENTER SHORT     | 11910.00   | 0.00       | Reversal Entry (Close 11910 < VWAP 11914.14)
+79    | 2026-01-09 14:51:00  | EXIT (Reversal) | 11926.00   | -16.00     | Reversed to LONG
+80    | 2026-01-09 14:51:00  | ENTER LONG      | 11926.00   | 0.00       | Reversal Entry (Close 11926 > VWAP 11914.28)
+80    | 2026-01-09 15:00:00  | EXIT (Square Off) | 11901.00   | -25.00     | Auto Square Off at 15:00:00
+81    | 2026-01-12 09:15:00  | ENTER SHORT     | 11805.00   | 0.00       | Fresh Entry (Close 11805 < VWAP 11810.33)
+81    | 2026-01-12 09:36:00  | EXIT (SL)       | 11778.00   | 27.00      | SL Hit (Close 11778 >= SL 11762.28)
+82    | 2026-01-12 09:36:00  | ENTER LONG      | 11778.00   | 0.00       | SL Reversal Entry
+82    | 2026-01-12 09:57:00  | EXIT (SL)       | 11768.00   | -10.00     | SL Hit (Close 11768 <= SL 11778.32)
+83    | 2026-01-12 09:57:00  | ENTER SHORT     | 11768.00   | 0.00       | SL Reversal Entry
+83    | 2026-01-12 10:00:00  | EXIT (Reversal) | 11780.00   | -12.00     | Reversed to LONG
+84    | 2026-01-12 10:00:00  | ENTER LONG      | 11780.00   | 0.00       | Reversal Entry (Close 11780 > VWAP 11778.59)
+84    | 2026-01-12 10:15:00  | EXIT (Reversal) | 11770.00   | -10.00     | Reversed to SHORT
+85    | 2026-01-12 10:15:00  | ENTER SHORT     | 11770.00   | 0.00       | Reversal Entry (Close 11770 < VWAP 11781.03)
+85    | 2026-01-12 10:18:00  | EXIT (SL)       | 11798.00   | -28.00     | SL Hit (Close 11798 >= SL 11785.00)
+86    | 2026-01-12 10:18:00  | ENTER LONG      | 11798.00   | 0.00       | SL Reversal Entry
+86    | 2026-01-12 10:30:00  | EXIT (Reversal) | 11770.00   | -28.00     | Reversed to SHORT
+87    | 2026-01-12 10:30:00  | ENTER SHORT     | 11770.00   | 0.00       | Reversal Entry (Close 11770 < VWAP 11782.40)
+87    | 2026-01-12 10:48:00  | EXIT (SL)       | 11810.00   | -40.00     | SL Hit (Close 11810 >= SL 11780.36)
+88    | 2026-01-12 10:48:00  | ENTER LONG      | 11810.00   | 0.00       | SL Reversal Entry
+88    | 2026-01-12 10:57:00  | EXIT (Reversal) | 11772.00   | -38.00     | Reversed to SHORT
+89    | 2026-01-12 10:57:00  | ENTER SHORT     | 11772.00   | 0.00       | Reversal Entry (Close 11772 < VWAP 11781.90)
+89    | 2026-01-12 11:57:00  | EXIT (SL)       | 11778.00   | -6.00      | SL Hit (Close 11778 >= SL 11776.14)
+90    | 2026-01-12 11:57:00  | ENTER LONG      | 11778.00   | 0.00       | SL Reversal Entry
+90    | 2026-01-12 12:03:00  | EXIT (Reversal) | 11775.00   | -3.00      | Reversed to SHORT
+91    | 2026-01-12 12:03:00  | ENTER SHORT     | 11775.00   | 0.00       | Reversal Entry (Close 11775 < VWAP 11776.14)
+91    | 2026-01-12 12:06:00  | EXIT (Reversal) | 11784.00   | -9.00      | Reversed to LONG
+92    | 2026-01-12 12:06:00  | ENTER LONG      | 11784.00   | 0.00       | Reversal Entry (Close 11784 > VWAP 11776.21)
+92    | 2026-01-12 14:33:00  | EXIT (SL)       | 11792.00   | 8.00       | SL Hit (Close 11792 <= SL 11795.97)
+93    | 2026-01-12 14:33:00  | ENTER SHORT     | 11792.00   | 0.00       | SL Reversal Entry
+93    | 2026-01-12 14:36:00  | EXIT (SL)       | 11828.00   | -36.00     | SL Hit (Close 11828 >= SL 11811.00)
+94    | 2026-01-12 14:36:00  | ENTER LONG      | 11828.00   | 0.00       | SL Reversal Entry
+94    | 2026-01-12 15:00:00  | EXIT (Square Off) | 11857.00   | 29.00      | Auto Square Off at 15:00:00
+95    | 2026-01-13 09:15:00  | ENTER LONG      | 11928.00   | 0.00       | Fresh Entry (Close 11928 > VWAP 11916.67)
+95    | 2026-01-13 09:18:00  | EXIT (Reversal) | 11885.00   | -43.00     | Reversed to SHORT
+96    | 2026-01-13 09:18:00  | ENTER SHORT     | 11885.00   | 0.00       | Reversal Entry (Close 11885 < VWAP 11908.65)
+96    | 2026-01-13 15:00:00  | EXIT (Square Off) | 11242.00   | 643.00     | Auto Square Off at 15:00:00
+97    | 2026-01-14 09:15:00  | ENTER LONG      | 11371.00   | 0.00       | Fresh Entry (Close 11371 > VWAP 11327.33)
+97    | 2026-01-14 10:06:00  | EXIT (SL)       | 11430.00   | 59.00      | SL Hit (Close 11430 <= SL 11435.17)
+98    | 2026-01-14 10:06:00  | ENTER SHORT     | 11430.00   | 0.00       | SL Reversal Entry
+98    | 2026-01-14 10:09:00  | EXIT (Reversal) | 11443.00   | -13.00     | Reversed to LONG
+99    | 2026-01-14 10:09:00  | ENTER LONG      | 11443.00   | 0.00       | Reversal Entry (Close 11443 > VWAP 11435.37)
+99    | 2026-01-14 10:12:00  | EXIT (Reversal) | 11427.00   | -16.00     | Reversed to SHORT
+100   | 2026-01-14 10:12:00  | ENTER SHORT     | 11427.00   | 0.00       | Reversal Entry (Close 11427 < VWAP 11435.34)
+100   | 2026-01-14 15:00:00  | EXIT (Square Off) | 11132.00   | 295.00     | Auto Square Off at 15:00:00
+101   | 2026-01-16 09:15:00  | ENTER LONG      | 11080.00   | 0.00       | Fresh Entry (Close 11080 > VWAP 11071.33)
+101   | 2026-01-16 09:54:00  | EXIT (SL)       | 11134.00   | 54.00      | SL Hit (Close 11134 <= SL 11150.40)
+102   | 2026-01-16 09:54:00  | ENTER SHORT     | 11134.00   | 0.00       | SL Reversal Entry
+102   | 2026-01-16 10:15:00  | EXIT (SL)       | 11143.00   | -9.00      | SL Hit (Close 11143 >= SL 11142.19)
+103   | 2026-01-16 10:15:00  | ENTER LONG      | 11143.00   | 0.00       | SL Reversal Entry
+103   | 2026-01-16 10:21:00  | EXIT (Reversal) | 11142.00   | -1.00      | Reversed to SHORT
+104   | 2026-01-16 10:21:00  | ENTER SHORT     | 11142.00   | 0.00       | Reversal Entry (Close 11142 < VWAP 11142.17)
+104   | 2026-01-16 10:27:00  | EXIT (Reversal) | 11142.00   | 0.00       | Reversed to LONG
+105   | 2026-01-16 10:27:00  | ENTER LONG      | 11142.00   | 0.00       | Reversal Entry (Close 11142 > VWAP 11141.99)
+105   | 2026-01-16 10:36:00  | EXIT (SL)       | 11072.00   | -70.00     | SL Hit (Close 11072 <= SL 11115.00)
+106   | 2026-01-16 10:36:00  | ENTER SHORT     | 11072.00   | 0.00       | SL Reversal Entry
+106   | 2026-01-16 15:00:00  | EXIT (Square Off) | 10752.00   | 320.00     | Auto Square Off at 15:00:00
+107   | 2026-01-19 09:15:00  | ENTER LONG      | 10757.00   | 0.00       | Fresh Entry (Close 10757 > VWAP 10702.67)
+107   | 2026-01-19 09:39:00  | EXIT (SL)       | 10762.00   | 5.00       | SL Hit (Close 10762 <= SL 10780.21)
+108   | 2026-01-19 09:39:00  | ENTER SHORT     | 10762.00   | 0.00       | SL Reversal Entry
+108   | 2026-01-19 09:42:00  | EXIT (Reversal) | 10789.00   | -27.00     | Reversed to LONG
+109   | 2026-01-19 09:42:00  | ENTER LONG      | 10789.00   | 0.00       | Reversal Entry (Close 10789 > VWAP 10779.86)
+109   | 2026-01-19 09:45:00  | EXIT (SL)       | 10751.00   | -38.00     | SL Hit (Close 10751 <= SL 10758.00)
+110   | 2026-01-19 09:45:00  | ENTER SHORT     | 10751.00   | 0.00       | SL Reversal Entry
+110   | 2026-01-19 09:48:00  | EXIT (Reversal) | 10779.00   | -28.00     | Reversed to LONG
+111   | 2026-01-19 09:48:00  | ENTER LONG      | 10779.00   | 0.00       | Reversal Entry (Close 10779 > VWAP 10778.87)
+111   | 2026-01-19 10:36:00  | EXIT (SL)       | 10774.00   | -5.00      | SL Hit (Close 10774 <= SL 10796.70)
+112   | 2026-01-19 10:36:00  | ENTER SHORT     | 10774.00   | 0.00       | SL Reversal Entry
+112   | 2026-01-19 10:39:00  | EXIT (Reversal) | 10808.00   | -34.00     | Reversed to LONG
+113   | 2026-01-19 10:39:00  | ENTER LONG      | 10808.00   | 0.00       | Reversal Entry (Close 10808 > VWAP 10796.38)
+113   | 2026-01-19 12:06:00  | EXIT (SL)       | 10830.00   | 22.00      | SL Hit (Close 10830 <= SL 10844.41)
+114   | 2026-01-19 12:06:00  | ENTER SHORT     | 10830.00   | 0.00       | SL Reversal Entry
+114   | 2026-01-19 12:09:00  | EXIT (Reversal) | 10865.00   | -35.00     | Reversed to LONG
+115   | 2026-01-19 12:09:00  | ENTER LONG      | 10865.00   | 0.00       | Reversal Entry (Close 10865 > VWAP 10845.59)
+115   | 2026-01-19 13:09:00  | EXIT (SL)       | 10844.00   | -21.00     | SL Hit (Close 10844 <= SL 10849.42)
+116   | 2026-01-19 13:09:00  | ENTER SHORT     | 10844.00   | 0.00       | SL Reversal Entry
+116   | 2026-01-19 13:12:00  | EXIT (Reversal) | 10850.00   | -6.00      | Reversed to LONG
+117   | 2026-01-19 13:12:00  | ENTER LONG      | 10850.00   | 0.00       | Reversal Entry (Close 10850 > VWAP 10849.53)
+117   | 2026-01-19 15:00:00  | EXIT (Square Off) | 11030.00   | 180.00     | Auto Square Off at 15:00:00
+118   | 2026-01-20 09:15:00  | ENTER LONG      | 11120.00   | 0.00       | Fresh Entry (Close 11120 > VWAP 11085.00)
+118   | 2026-01-20 09:18:00  | EXIT (Reversal) | 11090.00   | -30.00     | Reversed to SHORT
+119   | 2026-01-20 09:18:00  | ENTER SHORT     | 11090.00   | 0.00       | Reversal Entry (Close 11090 < VWAP 11090.14)
+119   | 2026-01-20 10:09:00  | EXIT (SL)       | 11018.00   | 72.00      | SL Hit (Close 11018 >= SL 11017.03)
+120   | 2026-01-20 10:09:00  | ENTER LONG      | 11018.00   | 0.00       | SL Reversal Entry
+120   | 2026-01-20 10:12:00  | EXIT (SL)       | 10975.00   | -43.00     | SL Hit (Close 10975 <= SL 10980.00)
+121   | 2026-01-20 10:12:00  | ENTER SHORT     | 10975.00   | 0.00       | SL Reversal Entry
+121   | 2026-01-20 15:00:00  | EXIT (Square Off) | 10711.00   | 264.00     | Auto Square Off at 15:00:00
+122   | 2026-01-21 09:15:00  | ENTER LONG      | 10729.00   | 0.00       | Fresh Entry (Close 10729 > VWAP 10721.67)
+122   | 2026-01-21 09:18:00  | EXIT (Reversal) | 10699.00   | -30.00     | Reversed to SHORT
+123   | 2026-01-21 09:18:00  | ENTER SHORT     | 10699.00   | 0.00       | Reversal Entry (Close 10699 < VWAP 10723.93)
+123   | 2026-01-21 11:54:00  | EXIT (SL)       | 10469.00   | 230.00     | SL Hit (Close 10469 >= SL 10467.29)
+124   | 2026-01-21 11:54:00  | ENTER LONG      | 10469.00   | 0.00       | SL Reversal Entry
+124   | 2026-01-21 11:57:00  | EXIT (Reversal) | 10434.00   | -35.00     | Reversed to SHORT
+125   | 2026-01-21 11:57:00  | ENTER SHORT     | 10434.00   | 0.00       | Reversal Entry (Close 10434 < VWAP 10466.46)
+125   | 2026-01-21 12:03:00  | EXIT (SL)       | 10473.00   | -39.00     | SL Hit (Close 10473 >= SL 10470.00)
+126   | 2026-01-21 12:03:00  | ENTER LONG      | 10473.00   | 0.00       | SL Reversal Entry
+126   | 2026-01-21 14:12:00  | EXIT (SL)       | 10497.00   | 24.00      | SL Hit (Close 10497 <= SL 10512.19)
+127   | 2026-01-21 14:12:00  | ENTER SHORT     | 10497.00   | 0.00       | SL Reversal Entry
+127   | 2026-01-21 14:15:00  | EXIT (Reversal) | 10524.00   | -27.00     | Reversed to LONG
+128   | 2026-01-21 14:15:00  | ENTER LONG      | 10524.00   | 0.00       | Reversal Entry (Close 10524 > VWAP 10512.06)
+128   | 2026-01-21 14:21:00  | EXIT (Reversal) | 10509.00   | -15.00     | Reversed to SHORT
+129   | 2026-01-21 14:21:00  | ENTER SHORT     | 10509.00   | 0.00       | Reversal Entry (Close 10509 < VWAP 10512.07)
+129   | 2026-01-21 14:39:00  | EXIT (SL)       | 10527.00   | -18.00     | SL Hit (Close 10527 >= SL 10511.57)
+130   | 2026-01-21 14:39:00  | ENTER LONG      | 10527.00   | 0.00       | SL Reversal Entry
+130   | 2026-01-21 15:00:00  | EXIT (Square Off) | 10507.00   | -20.00     | Auto Square Off at 15:00:00
+131   | 2026-01-22 09:15:00  | ENTER LONG      | 10686.00   | 0.00       | Fresh Entry (Close 10686 > VWAP 10668.67)
+131   | 2026-01-22 09:24:00  | EXIT (Reversal) | 10680.00   | -6.00      | Reversed to SHORT
+132   | 2026-01-22 09:24:00  | ENTER SHORT     | 10680.00   | 0.00       | Reversal Entry (Close 10680 < VWAP 10683.11)
+132   | 2026-01-22 09:27:00  | EXIT (Reversal) | 10700.00   | -20.00     | Reversed to LONG
+133   | 2026-01-22 09:27:00  | ENTER LONG      | 10700.00   | 0.00       | Reversal Entry (Close 10700 > VWAP 10684.68)
+133   | 2026-01-22 09:30:00  | EXIT (Reversal) | 10676.00   | -24.00     | Reversed to SHORT
+134   | 2026-01-22 09:30:00  | ENTER SHORT     | 10676.00   | 0.00       | Reversal Entry (Close 10676 < VWAP 10684.70)
+134   | 2026-01-22 15:00:00  | EXIT (Square Off) | 10492.00   | 184.00     | Auto Square Off at 15:00:00
+135   | 2026-01-23 09:15:00  | ENTER SHORT     | 10511.00   | 0.00       | Fresh Entry (Close 10511 < VWAP 10531.00)
+135   | 2026-01-23 09:18:00  | EXIT (Reversal) | 10547.00   | -36.00     | Reversed to LONG
+136   | 2026-01-23 09:18:00  | ENTER LONG      | 10547.00   | 0.00       | Reversal Entry (Close 10547 > VWAP 10532.23)
+136   | 2026-01-23 09:33:00  | EXIT (Reversal) | 10539.00   | -8.00      | Reversed to SHORT
+137   | 2026-01-23 09:33:00  | ENTER SHORT     | 10539.00   | 0.00       | Reversal Entry (Close 10539 < VWAP 10549.54)
+137   | 2026-01-23 09:51:00  | EXIT (SL)       | 10540.00   | -1.00      | SL Hit (Close 10540 >= SL 10538.01)
+138   | 2026-01-23 09:51:00  | ENTER LONG      | 10540.00   | 0.00       | SL Reversal Entry
+138   | 2026-01-23 10:45:00  | EXIT (SL)       | 10544.00   | 4.00       | SL Hit (Close 10544 <= SL 10589.00)
+139   | 2026-01-23 10:45:00  | ENTER SHORT     | 10544.00   | 0.00       | SL Reversal Entry
+139   | 2026-01-23 15:00:00  | EXIT (Square Off) | 10384.00   | 160.00     | Auto Square Off at 15:00:00
+140   | 2026-01-27 09:15:00  | ENTER SHORT     | 10258.00   | 0.00       | Fresh Entry (Close 10258 < VWAP 10297.00)
+140   | 2026-01-27 09:33:00  | EXIT (SL)       | 10197.00   | 61.00      | SL Hit (Close 10197 >= SL 10175.47)
+141   | 2026-01-27 09:33:00  | ENTER LONG      | 10197.00   | 0.00       | SL Reversal Entry
+141   | 2026-01-27 10:06:00  | EXIT (SL)       | 10175.00   | -22.00     | SL Hit (Close 10175 <= SL 10189.27)
+142   | 2026-01-27 10:06:00  | ENTER SHORT     | 10175.00   | 0.00       | SL Reversal Entry
+142   | 2026-01-27 10:09:00  | EXIT (Reversal) | 10190.00   | -15.00     | Reversed to LONG
+143   | 2026-01-27 10:09:00  | ENTER LONG      | 10190.00   | 0.00       | Reversal Entry (Close 10190 > VWAP 10188.38)
+143   | 2026-01-27 10:18:00  | EXIT (Reversal) | 10178.00   | -12.00     | Reversed to SHORT
+144   | 2026-01-27 10:18:00  | ENTER SHORT     | 10178.00   | 0.00       | Reversal Entry (Close 10178 < VWAP 10188.96)
+144   | 2026-01-27 14:39:00  | EXIT (SL)       | 10172.00   | 6.00       | SL Hit (Close 10172 >= SL 10110.71)
+145   | 2026-01-27 14:39:00  | ENTER LONG      | 10172.00   | 0.00       | SL Reversal Entry
+145   | 2026-01-27 15:00:00  | EXIT (Square Off) | 10152.00   | -20.00     | Auto Square Off at 15:00:00
+146   | 2026-01-28 09:15:00  | ENTER LONG      | 10295.00   | 0.00       | Fresh Entry (Close 10295 > VWAP 10278.00)
+146   | 2026-01-28 09:24:00  | EXIT (Reversal) | 10249.00   | -46.00     | Reversed to SHORT
+147   | 2026-01-28 09:24:00  | ENTER SHORT     | 10249.00   | 0.00       | Reversal Entry (Close 10249 < VWAP 10277.99)
+147   | 2026-01-28 11:09:00  | EXIT (SL)       | 10154.00   | 95.00      | SL Hit (Close 10154 >= SL 10147.32)
+148   | 2026-01-28 11:09:00  | ENTER LONG      | 10154.00   | 0.00       | SL Reversal Entry
+148   | 2026-01-28 15:00:00  | EXIT (Square Off) | 10284.00   | 130.00     | Auto Square Off at 15:00:00
+149   | 2026-01-29 09:15:00  | ENTER LONG      | 10336.00   | 0.00       | Fresh Entry (Close 10336 > VWAP 10334.00)
+149   | 2026-01-29 09:21:00  | EXIT (Reversal) | 10281.00   | -55.00     | Reversed to SHORT
+150   | 2026-01-29 09:21:00  | ENTER SHORT     | 10281.00   | 0.00       | Reversal Entry (Close 10281 < VWAP 10330.32)
+150   | 2026-01-29 09:27:00  | EXIT (SL)       | 10361.00   | -80.00     | SL Hit (Close 10361 >= SL 10359.00)
+151   | 2026-01-29 09:27:00  | ENTER LONG      | 10361.00   | 0.00       | SL Reversal Entry
+151   | 2026-01-29 09:30:00  | EXIT (Reversal) | 10315.00   | -46.00     | Reversed to SHORT
+152   | 2026-01-29 09:30:00  | ENTER SHORT     | 10315.00   | 0.00       | Reversal Entry (Close 10315 < VWAP 10323.93)
+152   | 2026-01-29 11:21:00  | EXIT (SL)       | 10220.00   | 95.00      | SL Hit (Close 10220 >= SL 10217.65)
+153   | 2026-01-29 11:21:00  | ENTER LONG      | 10220.00   | 0.00       | SL Reversal Entry
+153   | 2026-01-29 11:24:00  | EXIT (SL)       | 10180.00   | -40.00     | SL Hit (Close 10180 <= SL 10190.00)
+154   | 2026-01-29 11:24:00  | ENTER SHORT     | 10180.00   | 0.00       | SL Reversal Entry
+154   | 2026-01-29 13:30:00  | EXIT (SL)       | 10219.00   | -39.00     | SL Hit (Close 10219 >= SL 10203.27)
+155   | 2026-01-29 13:30:00  | ENTER LONG      | 10219.00   | 0.00       | SL Reversal Entry
+155   | 2026-01-29 15:00:00  | EXIT (Square Off) | 10309.00   | 90.00      | Auto Square Off at 15:00:00
+156   | 2026-01-30 09:15:00  | ENTER LONG      | 10213.00   | 0.00       | Fresh Entry (Close 10213 > VWAP 10092.33)
+156   | 2026-01-30 11:36:00  | EXIT (SL)       | 10588.00   | 375.00     | SL Hit (Close 10588 <= SL 10603.73)
+157   | 2026-01-30 11:36:00  | ENTER SHORT     | 10588.00   | 0.00       | SL Reversal Entry
+157   | 2026-01-30 11:39:00  | EXIT (SL)       | 10628.00   | -40.00     | SL Hit (Close 10628 >= SL 10617.00)
+158   | 2026-01-30 11:39:00  | ENTER LONG      | 10628.00   | 0.00       | SL Reversal Entry
+158   | 2026-01-30 11:45:00  | EXIT (SL)       | 10584.00   | -44.00     | SL Hit (Close 10584 <= SL 10584.00)
+159   | 2026-01-30 11:45:00  | ENTER SHORT     | 10584.00   | 0.00       | SL Reversal Entry
+159   | 2026-01-30 15:00:00  | EXIT (Square Off) | 10432.00   | 152.00     | Auto Square Off at 15:00:00
+
+--- SUMMARY ---
+Total Trades: 318
+Total Cumulative PnL: 1893.00

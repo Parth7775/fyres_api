@@ -1,0 +1,12 @@
+import auth
+import main
+
+auth_code = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfaWQiOiJZWE5TVENVTFBLIiwidXVpZCI6ImNkNjgzMzZiMmVlNjRlMTliYTdiMmQzMGY4MjU0MDdiIiwiaXBBZGRyIjoiIiwibm9uY2UiOiIiLCJzY29wZSI6IiIsImRpc3BsYXlfbmFtZSI6IlhQMjQxMTEiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiIyNDlhZDM1MWI2ZDU0YWQxZjU4ZmY1NzNkYTZlOGFmMTNlOTk5ZjYwZjYyYTYzZjkwMWNkNzkyZCIsImlzRGRwaUVuYWJsZWQiOiJOIiwiaXNNdGZFbmFibGVkIjoiTiIsImF1ZCI6IltcImQ6MVwiLFwiZDoyXCIsXCJ4OjBcIixcIng6MVwiLFwieDoyXCJdIiwiZXhwIjoxNzY5ODcwNzQ2LCJpYXQiOjE3Njk4NDA3NDYsImlzcyI6ImFwaS5sb2dpbi5meWVycy5pbiIsIm5iZiI6MTc2OTg0MDc0Niwic3ViIjoiYXV0aF9jb2RlIn0.epMrKWpItoj6CswZQhaUzbhd_x0GYEzhXvt6oMSG-8g"
+
+try:
+    print("Generating access token...")
+    access_token = auth.generate_access_token(auth_code)
+    main.save_access_token(access_token)
+    print("Access token saved successfully.")
+except Exception as e:
+    print(f"Error generating token: {e}")

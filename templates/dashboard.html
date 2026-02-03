@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyers Trading Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Antigravity Trader</h1>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <span id="connection-status" class="status-badge">Checking API...</span>
+                <button onclick="fetchPositions()" class="refresh-btn">Refresh</button>
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Positions Section -->
+            <div class="card">
+                <h2>Open Positions</h2>
+                <div id="positions-container">
+                    <p style="color: var(--text-secondary); text-align: center;">Loading positions...</p>
+                </div>
+                <div id="total-pnl-container" class="total-pnl">
+                    Total P&L: <span id="total-pnl-value">0.00</span>
+                </div>
+            </div>
+
+            <!-- Algo Monitor Section -->
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2>Algo Monitor</h2>
+                    <span id="algo-timestamp"
+                        style="font-size: 0.8em; color: var(--text-secondary);">Connecting...</span>
+                </div>
+
+                <div id="algo-container" style="overflow-x: auto; margin-top: 10px;">
+                    <p style="color: var(--text-secondary); text-align: center;">Waiting for Algo Status...</p>
+                </div>
+
+                <style>
+                    .algo-table {
+                        width: 100%;
+                        border-collapse: collapse;
+                    }
+
+                    .algo-table th,
+                    .algo-table td {
+                        padding: 10px;
+                        text-align: left;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+                        font-size: 0.9em;
+                    }
+
+                    .algo-table th {
+                        color: var(--text-secondary);
+                        font-weight: 500;
+                    }
+
+                    .tag {
+                        padding: 4px 8px;
+                        border-radius: 4px;
+                        font-size: 0.75em;
+                        font-weight: 600;
+                        letter-spacing: 0.5px;
+                    }
+
+                    .tag-active {
+                        background: rgba(64, 196, 255, 0.15);
+                        color: #40c4ff;
+                        border: 1px solid rgba(64, 196, 255, 0.3);
+                    }
+
+                    .tag-tracking {
+                        background: rgba(255, 255, 255, 0.05);
+                        color: #888;
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+                    }
+
+                    .tag-ce {
+                        color: #00e676;
+                    }
+
+                    .tag-pe {
+                        color: #ff5252;
+                    }
+
+                    .signal-triggered {
+                        background: rgba(255, 82, 82, 0.2);
+                        color: #ff5252;
+                    }
+                </style>
+            </div>
+            <!-- Trade History Section -->
+            <div class="card" style="margin-top: 20px;">
+                <h2>Trade History (Daily Log)</h2>
+                <div id="history-container" style="max-height: 300px; overflow-y: auto;">
+                    <table class="algo-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Type</th>
+                                <th>Symbol</th>
+                                <th>Action</th>
+                                <th>Price</th>
+                                <th>Info / PnL</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history-body">
+                            <tr>
+                                <td colspan="5" style="text-align:center">Loading...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>

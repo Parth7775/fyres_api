@@ -1,0 +1,629 @@
+Fetching data for NSE:DIXON-EQ from Oct 1, 2025 to Nov 30, 2025...
+Fetching 2025-10-01 to 2025-10-31...
+  Fetched 2521 candles.
+Fetching 2025-11-01 to 2025-11-30...
+  Fetched 2375 candles.
+Total Fetched Candles: 4896
+
+--- TRADES ---
+ID    | Time                 | Action          | Price      | PnL        | Notes
+1     | 2025-10-01 09:18:00  | ENTER LONG      | 16542.00   | 0.00       | Fresh Entry (Close 16542 > VWAP 16534.33)
+1     | 2025-10-01 09:21:00  | EXIT (Reversal) | 16510.00   | -32.00     | Reversed to SHORT
+2     | 2025-10-01 09:21:00  | ENTER SHORT     | 16510.00   | 0.00       | Reversal Entry (Close 16510 < VWAP 16533.32)
+2     | 2025-10-01 09:24:00  | EXIT (Reversal) | 16544.00   | -34.00     | Reversed to LONG
+3     | 2025-10-01 09:24:00  | ENTER LONG      | 16544.00   | 0.00       | Reversal Entry (Close 16544 > VWAP 16533.29)
+3     | 2025-10-01 09:39:00  | EXIT (Reversal) | 16552.00   | 8.00       | Reversed to SHORT
+4     | 2025-10-01 09:39:00  | ENTER SHORT     | 16552.00   | 0.00       | Reversal Entry (Close 16552 < VWAP 16561.15)
+4     | 2025-10-01 14:51:00  | EXIT (SL)       | 16475.00   | 77.00      | SL Hit (Close 16475 >= SL 16468.76)
+5     | 2025-10-01 14:51:00  | ENTER LONG      | 16475.00   | 0.00       | SL Reversal Entry
+5     | 2025-10-01 14:54:00  | EXIT (Reversal) | 16458.00   | -17.00     | Reversed to SHORT
+6     | 2025-10-01 14:54:00  | ENTER SHORT     | 16458.00   | 0.00       | Reversal Entry (Close 16458 < VWAP 16468.61)
+6     | 2025-10-01 15:00:00  | EXIT (Square Off) | 16448.00   | 10.00      | Auto Square Off at 15:00:00
+7     | 2025-10-03 09:15:00  | ENTER SHORT     | 16457.00   | 0.00       | Fresh Entry (Close 16457 < VWAP 16461.00)
+7     | 2025-10-03 09:18:00  | EXIT (SL)       | 16598.00   | -141.00    | SL Hit (Close 16598 >= SL 16533.00)
+8     | 2025-10-03 09:18:00  | ENTER LONG      | 16598.00   | 0.00       | SL Reversal Entry
+8     | 2025-10-03 10:00:00  | EXIT (SL)       | 16537.00   | -61.00     | SL Hit (Close 16537 <= SL 16540.37)
+9     | 2025-10-03 10:00:00  | ENTER SHORT     | 16537.00   | 0.00       | SL Reversal Entry
+9     | 2025-10-03 10:18:00  | EXIT (SL)       | 16540.00   | -3.00      | SL Hit (Close 16540 >= SL 16535.77)
+10    | 2025-10-03 10:18:00  | ENTER LONG      | 16540.00   | 0.00       | SL Reversal Entry
+10    | 2025-10-03 10:30:00  | EXIT (Reversal) | 16536.00   | -4.00      | Reversed to SHORT
+11    | 2025-10-03 10:30:00  | ENTER SHORT     | 16536.00   | 0.00       | Reversal Entry (Close 16536 < VWAP 16536.32)
+11    | 2025-10-03 10:36:00  | EXIT (Reversal) | 16545.00   | -9.00      | Reversed to LONG
+12    | 2025-10-03 10:36:00  | ENTER LONG      | 16545.00   | 0.00       | Reversal Entry (Close 16545 > VWAP 16536.33)
+12    | 2025-10-03 10:45:00  | EXIT (SL)       | 16526.00   | -19.00     | SL Hit (Close 16526 <= SL 16529.00)
+13    | 2025-10-03 10:45:00  | ENTER SHORT     | 16526.00   | 0.00       | SL Reversal Entry
+13    | 2025-10-03 10:51:00  | EXIT (Reversal) | 16540.00   | -14.00     | Reversed to LONG
+14    | 2025-10-03 10:51:00  | ENTER LONG      | 16540.00   | 0.00       | Reversal Entry (Close 16540 > VWAP 16539.24)
+14    | 2025-10-03 11:15:00  | EXIT (SL)       | 16522.00   | -18.00     | SL Hit (Close 16522 <= SL 16539.52)
+15    | 2025-10-03 11:15:00  | ENTER SHORT     | 16522.00   | 0.00       | SL Reversal Entry
+15    | 2025-10-03 14:18:00  | EXIT (SL)       | 16535.00   | -13.00     | SL Hit (Close 16535 >= SL 16525.95)
+16    | 2025-10-03 14:18:00  | ENTER LONG      | 16535.00   | 0.00       | SL Reversal Entry
+16    | 2025-10-03 15:00:00  | EXIT (Square Off) | 16565.00   | 30.00      | Auto Square Off at 15:00:00
+17    | 2025-10-06 09:15:00  | ENTER LONG      | 16651.00   | 0.00       | Fresh Entry (Close 16651 > VWAP 16636.00)
+17    | 2025-10-06 09:18:00  | EXIT (Reversal) | 16613.00   | -38.00     | Reversed to SHORT
+18    | 2025-10-06 09:18:00  | ENTER SHORT     | 16613.00   | 0.00       | Reversal Entry (Close 16613 < VWAP 16633.41)
+18    | 2025-10-06 09:21:00  | EXIT (Reversal) | 16636.00   | -23.00     | Reversed to LONG
+19    | 2025-10-06 09:21:00  | ENTER LONG      | 16636.00   | 0.00       | Reversal Entry (Close 16636 > VWAP 16629.47)
+19    | 2025-10-06 09:24:00  | EXIT (Reversal) | 16616.00   | -20.00     | Reversed to SHORT
+20    | 2025-10-06 09:24:00  | ENTER SHORT     | 16616.00   | 0.00       | Reversal Entry (Close 16616 < VWAP 16628.99)
+20    | 2025-10-06 09:48:00  | EXIT (SL)       | 16612.00   | 4.00       | SL Hit (Close 16612 >= SL 16609.92)
+21    | 2025-10-06 09:48:00  | ENTER LONG      | 16612.00   | 0.00       | SL Reversal Entry
+21    | 2025-10-06 09:51:00  | EXIT (Reversal) | 16602.00   | -10.00     | Reversed to SHORT
+22    | 2025-10-06 09:51:00  | ENTER SHORT     | 16602.00   | 0.00       | Reversal Entry (Close 16602 < VWAP 16609.44)
+22    | 2025-10-06 09:57:00  | EXIT (SL)       | 16630.00   | -28.00     | SL Hit (Close 16630 >= SL 16616.00)
+23    | 2025-10-06 09:57:00  | ENTER LONG      | 16630.00   | 0.00       | SL Reversal Entry
+23    | 2025-10-06 10:15:00  | EXIT (SL)       | 16607.00   | -23.00     | SL Hit (Close 16607 <= SL 16611.17)
+24    | 2025-10-06 10:15:00  | ENTER SHORT     | 16607.00   | 0.00       | SL Reversal Entry
+24    | 2025-10-06 10:54:00  | EXIT (SL)       | 16615.00   | -8.00      | SL Hit (Close 16615 >= SL 16610.12)
+25    | 2025-10-06 10:54:00  | ENTER LONG      | 16615.00   | 0.00       | SL Reversal Entry
+25    | 2025-10-06 11:03:00  | EXIT (SL)       | 16600.00   | -15.00     | SL Hit (Close 16600 <= SL 16603.00)
+26    | 2025-10-06 11:03:00  | ENTER SHORT     | 16600.00   | 0.00       | SL Reversal Entry
+26    | 2025-10-06 11:42:00  | EXIT (SL)       | 16720.00   | -120.00    | SL Hit (Close 16720 >= SL 16608.42)
+27    | 2025-10-06 11:42:00  | ENTER LONG      | 16720.00   | 0.00       | SL Reversal Entry
+27    | 2025-10-06 15:00:00  | EXIT (Square Off) | 17046.00   | 326.00     | Auto Square Off at 15:00:00
+28    | 2025-10-07 09:15:00  | ENTER SHORT     | 16942.00   | 0.00       | Fresh Entry (Close 16942 < VWAP 16981.67)
+28    | 2025-10-07 09:21:00  | EXIT (Reversal) | 17030.00   | -88.00     | Reversed to LONG
+29    | 2025-10-07 09:21:00  | ENTER LONG      | 17030.00   | 0.00       | Reversal Entry (Close 17030 > VWAP 16974.55)
+29    | 2025-10-07 15:00:00  | EXIT (Square Off) | 17241.00   | 211.00     | Auto Square Off at 15:00:00
+30    | 2025-10-08 09:15:00  | ENTER SHORT     | 17205.00   | 0.00       | Fresh Entry (Close 17205 < VWAP 17225.00)
+30    | 2025-10-08 13:33:00  | EXIT (SL)       | 17096.00   | 109.00     | SL Hit (Close 17096 >= SL 17095.23)
+31    | 2025-10-08 13:33:00  | ENTER LONG      | 17096.00   | 0.00       | SL Reversal Entry
+31    | 2025-10-08 13:39:00  | EXIT (SL)       | 17065.00   | -31.00     | SL Hit (Close 17065 <= SL 17083.00)
+32    | 2025-10-08 13:39:00  | ENTER SHORT     | 17065.00   | 0.00       | SL Reversal Entry
+32    | 2025-10-08 15:00:00  | EXIT (Square Off) | 16875.00   | 190.00     | Auto Square Off at 15:00:00
+33    | 2025-10-09 09:15:00  | ENTER LONG      | 16968.00   | 0.00       | Fresh Entry (Close 16968 > VWAP 16946.67)
+33    | 2025-10-09 09:24:00  | EXIT (Reversal) | 16925.00   | -43.00     | Reversed to SHORT
+34    | 2025-10-09 09:24:00  | ENTER SHORT     | 16925.00   | 0.00       | Reversal Entry (Close 16925 < VWAP 16953.71)
+34    | 2025-10-09 09:39:00  | EXIT (Reversal) | 16945.00   | -20.00     | Reversed to LONG
+35    | 2025-10-09 09:39:00  | ENTER LONG      | 16945.00   | 0.00       | Reversal Entry (Close 16945 > VWAP 16936.77)
+35    | 2025-10-09 09:42:00  | EXIT (Reversal) | 16929.00   | -16.00     | Reversed to SHORT
+36    | 2025-10-09 09:42:00  | ENTER SHORT     | 16929.00   | 0.00       | Reversal Entry (Close 16929 < VWAP 16937.26)
+36    | 2025-10-09 09:51:00  | EXIT (Reversal) | 16960.00   | -31.00     | Reversed to LONG
+37    | 2025-10-09 09:51:00  | ENTER LONG      | 16960.00   | 0.00       | Reversal Entry (Close 16960 > VWAP 16937.41)
+37    | 2025-10-09 15:00:00  | EXIT (Square Off) | 17109.00   | 149.00     | Auto Square Off at 15:00:00
+38    | 2025-10-10 09:15:00  | ENTER LONG      | 17190.00   | 0.00       | Fresh Entry (Close 17190 > VWAP 17156.67)
+38    | 2025-10-10 09:21:00  | EXIT (Reversal) | 17160.00   | -30.00     | Reversed to SHORT
+39    | 2025-10-10 09:21:00  | ENTER SHORT     | 17160.00   | 0.00       | Reversal Entry (Close 17160 < VWAP 17163.16)
+39    | 2025-10-10 09:24:00  | EXIT (SL)       | 17233.00   | -73.00     | SL Hit (Close 17233 >= SL 17180.00)
+40    | 2025-10-10 09:24:00  | ENTER LONG      | 17233.00   | 0.00       | SL Reversal Entry
+40    | 2025-10-10 09:57:00  | EXIT (SL)       | 17165.00   | -68.00     | SL Hit (Close 17165 <= SL 17196.95)
+41    | 2025-10-10 09:57:00  | ENTER SHORT     | 17165.00   | 0.00       | SL Reversal Entry
+41    | 2025-10-10 10:39:00  | EXIT (SL)       | 17231.00   | -66.00     | SL Hit (Close 17231 >= SL 17183.07)
+42    | 2025-10-10 10:39:00  | ENTER LONG      | 17231.00   | 0.00       | SL Reversal Entry
+42    | 2025-10-10 13:57:00  | EXIT (SL)       | 17261.00   | 30.00      | SL Hit (Close 17261 <= SL 17266.88)
+43    | 2025-10-10 13:57:00  | ENTER SHORT     | 17261.00   | 0.00       | SL Reversal Entry
+43    | 2025-10-10 14:00:00  | EXIT (Reversal) | 17273.00   | -12.00     | Reversed to LONG
+44    | 2025-10-10 14:00:00  | ENTER LONG      | 17273.00   | 0.00       | Reversal Entry (Close 17273 > VWAP 17266.91)
+44    | 2025-10-10 15:00:00  | EXIT (Square Off) | 17340.00   | 67.00      | Auto Square Off at 15:00:00
+45    | 2025-10-13 09:15:00  | ENTER SHORT     | 17037.00   | 0.00       | Fresh Entry (Close 17037 < VWAP 17102.33)
+45    | 2025-10-13 09:18:00  | EXIT (Reversal) | 17137.00   | -100.00    | Reversed to LONG
+46    | 2025-10-13 09:18:00  | ENTER LONG      | 17137.00   | 0.00       | Reversal Entry (Close 17137 > VWAP 17106.85)
+46    | 2025-10-13 11:15:00  | EXIT (SL)       | 17167.00   | 30.00      | SL Hit (Close 17167 <= SL 17168.60)
+47    | 2025-10-13 11:15:00  | ENTER SHORT     | 17167.00   | 0.00       | SL Reversal Entry
+47    | 2025-10-13 11:24:00  | EXIT (Reversal) | 17181.00   | -14.00     | Reversed to LONG
+48    | 2025-10-13 11:24:00  | ENTER LONG      | 17181.00   | 0.00       | Reversal Entry (Close 17181 > VWAP 17167.36)
+48    | 2025-10-13 11:39:00  | EXIT (Reversal) | 17166.00   | -15.00     | Reversed to SHORT
+49    | 2025-10-13 11:39:00  | ENTER SHORT     | 17166.00   | 0.00       | Reversal Entry (Close 17166 < VWAP 17167.91)
+49    | 2025-10-13 11:45:00  | EXIT (Reversal) | 17168.00   | -2.00      | Reversed to LONG
+50    | 2025-10-13 11:45:00  | ENTER LONG      | 17168.00   | 0.00       | Reversal Entry (Close 17168 > VWAP 17167.84)
+50    | 2025-10-13 12:24:00  | EXIT (SL)       | 17154.00   | -14.00     | SL Hit (Close 17154 <= SL 17172.00)
+51    | 2025-10-13 12:24:00  | ENTER SHORT     | 17154.00   | 0.00       | SL Reversal Entry
+51    | 2025-10-13 13:12:00  | EXIT (SL)       | 17179.00   | -25.00     | SL Hit (Close 17179 >= SL 17171.21)
+52    | 2025-10-13 13:12:00  | ENTER LONG      | 17179.00   | 0.00       | SL Reversal Entry
+52    | 2025-10-13 15:00:00  | EXIT (Square Off) | 17205.00   | 26.00      | Auto Square Off at 15:00:00
+53    | 2025-10-14 09:15:00  | ENTER SHORT     | 17062.00   | 0.00       | Fresh Entry (Close 17062 < VWAP 17126.33)
+53    | 2025-10-14 09:18:00  | EXIT (Reversal) | 17141.00   | -79.00     | Reversed to LONG
+54    | 2025-10-14 09:18:00  | ENTER LONG      | 17141.00   | 0.00       | Reversal Entry (Close 17141 > VWAP 17120.68)
+54    | 2025-10-14 09:21:00  | EXIT (Reversal) | 17086.00   | -55.00     | Reversed to SHORT
+55    | 2025-10-14 09:21:00  | ENTER SHORT     | 17086.00   | 0.00       | Reversal Entry (Close 17086 < VWAP 17116.78)
+55    | 2025-10-14 15:00:00  | EXIT (Square Off) | 16657.00   | 429.00     | Auto Square Off at 15:00:00
+56    | 2025-10-15 09:15:00  | ENTER LONG      | 16715.00   | 0.00       | Fresh Entry (Close 16715 > VWAP 16699.67)
+56    | 2025-10-15 09:36:00  | EXIT (SL)       | 16705.00   | -10.00     | SL Hit (Close 16705 <= SL 16748.69)
+57    | 2025-10-15 09:36:00  | ENTER SHORT     | 16705.00   | 0.00       | SL Reversal Entry
+57    | 2025-10-15 09:54:00  | EXIT (SL)       | 16747.00   | -42.00     | SL Hit (Close 16747 >= SL 16734.96)
+58    | 2025-10-15 09:54:00  | ENTER LONG      | 16747.00   | 0.00       | SL Reversal Entry
+58    | 2025-10-15 10:42:00  | EXIT (SL)       | 16727.00   | -20.00     | SL Hit (Close 16727 <= SL 16763.25)
+59    | 2025-10-15 10:42:00  | ENTER SHORT     | 16727.00   | 0.00       | SL Reversal Entry
+59    | 2025-10-15 12:45:00  | EXIT (SL)       | 16745.00   | -18.00     | SL Hit (Close 16745 >= SL 16738.78)
+60    | 2025-10-15 12:45:00  | ENTER LONG      | 16745.00   | 0.00       | SL Reversal Entry
+60    | 2025-10-15 12:51:00  | EXIT (SL)       | 16725.00   | -20.00     | SL Hit (Close 16725 <= SL 16725.00)
+61    | 2025-10-15 12:51:00  | ENTER SHORT     | 16725.00   | 0.00       | SL Reversal Entry
+61    | 2025-10-15 13:00:00  | EXIT (SL)       | 16747.00   | -22.00     | SL Hit (Close 16747 >= SL 16747.00)
+62    | 2025-10-15 13:00:00  | ENTER LONG      | 16747.00   | 0.00       | SL Reversal Entry
+62    | 2025-10-15 13:09:00  | EXIT (Reversal) | 16724.00   | -23.00     | Reversed to SHORT
+63    | 2025-10-15 13:09:00  | ENTER SHORT     | 16724.00   | 0.00       | Reversal Entry (Close 16724 < VWAP 16738.78)
+63    | 2025-10-15 13:15:00  | EXIT (Reversal) | 16744.00   | -20.00     | Reversed to LONG
+64    | 2025-10-15 13:15:00  | ENTER LONG      | 16744.00   | 0.00       | Reversal Entry (Close 16744 > VWAP 16738.63)
+64    | 2025-10-15 13:21:00  | EXIT (Reversal) | 16719.00   | -25.00     | Reversed to SHORT
+65    | 2025-10-15 13:21:00  | ENTER SHORT     | 16719.00   | 0.00       | Reversal Entry (Close 16719 < VWAP 16738.60)
+65    | 2025-10-15 13:30:00  | EXIT (Reversal) | 16739.00   | -20.00     | Reversed to LONG
+66    | 2025-10-15 13:30:00  | ENTER LONG      | 16739.00   | 0.00       | Reversal Entry (Close 16739 > VWAP 16738.49)
+66    | 2025-10-15 13:33:00  | EXIT (Reversal) | 16737.00   | -2.00      | Reversed to SHORT
+67    | 2025-10-15 13:33:00  | ENTER SHORT     | 16737.00   | 0.00       | Reversal Entry (Close 16737 < VWAP 16738.48)
+67    | 2025-10-15 14:30:00  | EXIT (SL)       | 16740.00   | -3.00      | SL Hit (Close 16740 >= SL 16736.40)
+68    | 2025-10-15 14:30:00  | ENTER LONG      | 16740.00   | 0.00       | SL Reversal Entry
+68    | 2025-10-15 15:00:00  | EXIT (Square Off) | 16774.00   | 34.00      | Auto Square Off at 15:00:00
+69    | 2025-10-16 09:15:00  | ENTER LONG      | 16889.00   | 0.00       | Fresh Entry (Close 16889 > VWAP 16829.00)
+69    | 2025-10-16 09:21:00  | EXIT (Reversal) | 16840.00   | -49.00     | Reversed to SHORT
+70    | 2025-10-16 09:21:00  | ENTER SHORT     | 16840.00   | 0.00       | Reversal Entry (Close 16840 < VWAP 16846.24)
+70    | 2025-10-16 09:57:00  | EXIT (SL)       | 16841.00   | -1.00      | SL Hit (Close 16841 >= SL 16836.65)
+71    | 2025-10-16 09:57:00  | ENTER LONG      | 16841.00   | 0.00       | SL Reversal Entry
+71    | 2025-10-16 10:00:00  | EXIT (Reversal) | 16835.00   | -6.00      | Reversed to SHORT
+72    | 2025-10-16 10:00:00  | ENTER SHORT     | 16835.00   | 0.00       | Reversal Entry (Close 16835 < VWAP 16836.45)
+72    | 2025-10-16 10:06:00  | EXIT (SL)       | 16843.00   | -8.00      | SL Hit (Close 16843 >= SL 16840.00)
+73    | 2025-10-16 10:06:00  | ENTER LONG      | 16843.00   | 0.00       | SL Reversal Entry
+73    | 2025-10-16 10:09:00  | EXIT (SL)       | 16819.00   | -24.00     | SL Hit (Close 16819 <= SL 16827.00)
+74    | 2025-10-16 10:09:00  | ENTER SHORT     | 16819.00   | 0.00       | SL Reversal Entry
+74    | 2025-10-16 12:42:00  | EXIT (SL)       | 16780.00   | 39.00      | SL Hit (Close 16780 >= SL 16758.87)
+75    | 2025-10-16 12:42:00  | ENTER LONG      | 16780.00   | 0.00       | SL Reversal Entry
+75    | 2025-10-16 15:00:00  | EXIT (Square Off) | 16873.00   | 93.00      | Auto Square Off at 15:00:00
+76    | 2025-10-17 09:15:00  | ENTER SHORT     | 16790.00   | 0.00       | Fresh Entry (Close 16790 < VWAP 16815.33)
+76    | 2025-10-17 09:24:00  | EXIT (Reversal) | 16799.00   | -9.00      | Reversed to LONG
+77    | 2025-10-17 09:24:00  | ENTER LONG      | 16799.00   | 0.00       | Reversal Entry (Close 16799 > VWAP 16781.30)
+77    | 2025-10-17 09:48:00  | EXIT (SL)       | 16794.00   | -5.00      | SL Hit (Close 16794 <= SL 16817.99)
+78    | 2025-10-17 09:48:00  | ENTER SHORT     | 16794.00   | 0.00       | SL Reversal Entry
+78    | 2025-10-17 09:51:00  | EXIT (Reversal) | 16843.00   | -49.00     | Reversed to LONG
+79    | 2025-10-17 09:51:00  | ENTER LONG      | 16843.00   | 0.00       | Reversal Entry (Close 16843 > VWAP 16817.97)
+79    | 2025-10-17 10:15:00  | EXIT (SL)       | 16815.00   | -28.00     | SL Hit (Close 16815 <= SL 16828.52)
+80    | 2025-10-17 10:15:00  | ENTER SHORT     | 16815.00   | 0.00       | SL Reversal Entry
+80    | 2025-10-17 10:18:00  | EXIT (Reversal) | 16835.00   | -20.00     | Reversed to LONG
+81    | 2025-10-17 10:18:00  | ENTER LONG      | 16835.00   | 0.00       | Reversal Entry (Close 16835 > VWAP 16828.18)
+81    | 2025-10-17 11:15:00  | EXIT (SL)       | 16829.00   | -6.00      | SL Hit (Close 16829 <= SL 16835.29)
+82    | 2025-10-17 11:15:00  | ENTER SHORT     | 16829.00   | 0.00       | SL Reversal Entry
+82    | 2025-10-17 11:18:00  | EXIT (Reversal) | 16848.00   | -19.00     | Reversed to LONG
+83    | 2025-10-17 11:18:00  | ENTER LONG      | 16848.00   | 0.00       | Reversal Entry (Close 16848 > VWAP 16835.89)
+83    | 2025-10-17 11:30:00  | EXIT (SL)       | 16821.00   | -27.00     | SL Hit (Close 16821 <= SL 16823.00)
+84    | 2025-10-17 11:30:00  | ENTER SHORT     | 16821.00   | 0.00       | SL Reversal Entry
+84    | 2025-10-17 12:12:00  | EXIT (SL)       | 16835.00   | -14.00     | SL Hit (Close 16835 >= SL 16826.78)
+85    | 2025-10-17 12:12:00  | ENTER LONG      | 16835.00   | 0.00       | SL Reversal Entry
+85    | 2025-10-17 12:48:00  | EXIT (SL)       | 16805.00   | -30.00     | SL Hit (Close 16805 <= SL 16830.15)
+86    | 2025-10-17 12:48:00  | ENTER SHORT     | 16805.00   | 0.00       | SL Reversal Entry
+86    | 2025-10-17 15:00:00  | EXIT (Square Off) | 16729.00   | 76.00      | Auto Square Off at 15:00:00
+87    | 2025-10-20 09:15:00  | ENTER LONG      | 16719.00   | 0.00       | Fresh Entry (Close 16719 > VWAP 16636.00)
+87    | 2025-10-20 09:21:00  | EXIT (Reversal) | 16631.00   | -88.00     | Reversed to SHORT
+88    | 2025-10-20 09:21:00  | ENTER SHORT     | 16631.00   | 0.00       | Reversal Entry (Close 16631 < VWAP 16736.71)
+88    | 2025-10-20 15:00:00  | EXIT (Square Off) | 16035.00   | 596.00     | Auto Square Off at 15:00:00
+89    | 2025-10-21 13:45:00  | ENTER SHORT     | 16203.00   | 0.00       | Fresh Entry (Close 16203 < VWAP 16207.33)
+89    | 2025-10-23 09:30:00  | EXIT (SL)       | 15841.00   | 362.00     | SL Hit (Close 15841 >= SL 15840.99)
+90    | 2025-10-23 09:30:00  | ENTER LONG      | 15841.00   | 0.00       | SL Reversal Entry
+90    | 2025-10-23 09:36:00  | EXIT (Reversal) | 15837.00   | -4.00      | Reversed to SHORT
+91    | 2025-10-23 09:36:00  | ENTER SHORT     | 15837.00   | 0.00       | Reversal Entry (Close 15837 < VWAP 15841.10)
+91    | 2025-10-23 09:39:00  | EXIT (Reversal) | 15861.00   | -24.00     | Reversed to LONG
+92    | 2025-10-23 09:39:00  | ENTER LONG      | 15861.00   | 0.00       | Reversal Entry (Close 15861 > VWAP 15841.30)
+92    | 2025-10-23 09:42:00  | EXIT (Reversal) | 15830.00   | -31.00     | Reversed to SHORT
+93    | 2025-10-23 09:42:00  | ENTER SHORT     | 15830.00   | 0.00       | Reversal Entry (Close 15830 < VWAP 15841.19)
+93    | 2025-10-23 09:57:00  | EXIT (SL)       | 15887.00   | -57.00     | SL Hit (Close 15887 >= SL 15868.00)
+94    | 2025-10-23 09:57:00  | ENTER LONG      | 15887.00   | 0.00       | SL Reversal Entry
+94    | 2025-10-23 10:00:00  | EXIT (Reversal) | 15825.00   | -62.00     | Reversed to SHORT
+95    | 2025-10-23 10:00:00  | ENTER SHORT     | 15825.00   | 0.00       | Reversal Entry (Close 15825 < VWAP 15841.52)
+95    | 2025-10-23 10:30:00  | EXIT (SL)       | 15839.00   | -14.00     | SL Hit (Close 15839 >= SL 15838.78)
+96    | 2025-10-23 10:30:00  | ENTER LONG      | 15839.00   | 0.00       | SL Reversal Entry
+96    | 2025-10-23 10:33:00  | EXIT (SL)       | 15811.00   | -28.00     | SL Hit (Close 15811 <= SL 15829.00)
+97    | 2025-10-23 10:33:00  | ENTER SHORT     | 15811.00   | 0.00       | SL Reversal Entry
+97    | 2025-10-23 12:33:00  | EXIT (SL)       | 15758.00   | 53.00      | SL Hit (Close 15758 >= SL 15752.79)
+98    | 2025-10-23 12:33:00  | ENTER LONG      | 15758.00   | 0.00       | SL Reversal Entry
+98    | 2025-10-23 12:45:00  | EXIT (Reversal) | 15751.00   | -7.00      | Reversed to SHORT
+99    | 2025-10-23 12:45:00  | ENTER SHORT     | 15751.00   | 0.00       | Reversal Entry (Close 15751 < VWAP 15752.78)
+99    | 2025-10-23 15:00:00  | EXIT (Square Off) | 15620.00   | 131.00     | Auto Square Off at 15:00:00
+100   | 2025-10-24 09:15:00  | ENTER LONG      | 15648.00   | 0.00       | Fresh Entry (Close 15648 > VWAP 15644.33)
+100   | 2025-10-24 09:18:00  | EXIT (SL)       | 15525.00   | -123.00    | SL Hit (Close 15525 <= SL 15584.00)
+101   | 2025-10-24 09:18:00  | ENTER SHORT     | 15525.00   | 0.00       | SL Reversal Entry
+101   | 2025-10-24 09:24:00  | EXIT (Reversal) | 15609.00   | -84.00     | Reversed to LONG
+102   | 2025-10-24 09:24:00  | ENTER LONG      | 15609.00   | 0.00       | Reversal Entry (Close 15609 > VWAP 15593.07)
+102   | 2025-10-24 10:15:00  | EXIT (SL)       | 15604.00   | -5.00      | SL Hit (Close 15604 <= SL 15631.99)
+103   | 2025-10-24 10:15:00  | ENTER SHORT     | 15604.00   | 0.00       | SL Reversal Entry
+103   | 2025-10-24 15:00:00  | EXIT (Square Off) | 15457.00   | 147.00     | Auto Square Off at 15:00:00
+104   | 2025-10-27 09:15:00  | ENTER LONG      | 15478.00   | 0.00       | Fresh Entry (Close 15478 > VWAP 15441.33)
+104   | 2025-10-27 09:24:00  | EXIT (Reversal) | 15447.00   | -31.00     | Reversed to SHORT
+105   | 2025-10-27 09:24:00  | ENTER SHORT     | 15447.00   | 0.00       | Reversal Entry (Close 15447 < VWAP 15447.67)
+105   | 2025-10-27 09:27:00  | EXIT (SL)       | 15456.00   | -9.00      | SL Hit (Close 15456 >= SL 15456.00)
+106   | 2025-10-27 09:27:00  | ENTER LONG      | 15456.00   | 0.00       | SL Reversal Entry
+106   | 2025-10-27 09:33:00  | EXIT (SL)       | 15428.00   | -28.00     | SL Hit (Close 15428 <= SL 15447.00)
+107   | 2025-10-27 09:33:00  | ENTER SHORT     | 15428.00   | 0.00       | SL Reversal Entry
+107   | 2025-10-27 09:36:00  | EXIT (Reversal) | 15450.00   | -22.00     | Reversed to LONG
+108   | 2025-10-27 09:36:00  | ENTER LONG      | 15450.00   | 0.00       | Reversal Entry (Close 15450 > VWAP 15447.16)
+108   | 2025-10-27 10:33:00  | EXIT (SL)       | 15476.00   | 26.00      | SL Hit (Close 15476 <= SL 15481.05)
+109   | 2025-10-27 10:33:00  | ENTER SHORT     | 15476.00   | 0.00       | SL Reversal Entry
+109   | 2025-10-27 10:36:00  | EXIT (Reversal) | 15484.00   | -8.00      | Reversed to LONG
+110   | 2025-10-27 10:36:00  | ENTER LONG      | 15484.00   | 0.00       | Reversal Entry (Close 15484 > VWAP 15481.37)
+110   | 2025-10-27 10:48:00  | EXIT (SL)       | 15475.00   | -9.00      | SL Hit (Close 15475 <= SL 15476.00)
+111   | 2025-10-27 10:48:00  | ENTER SHORT     | 15475.00   | 0.00       | SL Reversal Entry
+111   | 2025-10-27 10:57:00  | EXIT (Reversal) | 15492.00   | -17.00     | Reversed to LONG
+112   | 2025-10-27 10:57:00  | ENTER LONG      | 15492.00   | 0.00       | Reversal Entry (Close 15492 > VWAP 15481.79)
+112   | 2025-10-27 11:00:00  | EXIT (SL)       | 15476.00   | -16.00     | SL Hit (Close 15476 <= SL 15476.00)
+113   | 2025-10-27 11:00:00  | ENTER SHORT     | 15476.00   | 0.00       | SL Reversal Entry
+113   | 2025-10-27 11:06:00  | EXIT (Reversal) | 15488.00   | -12.00     | Reversed to LONG
+114   | 2025-10-27 11:06:00  | ENTER LONG      | 15488.00   | 0.00       | Reversal Entry (Close 15488 > VWAP 15481.73)
+114   | 2025-10-27 11:15:00  | EXIT (Reversal) | 15462.00   | -26.00     | Reversed to SHORT
+115   | 2025-10-27 11:15:00  | ENTER SHORT     | 15462.00   | 0.00       | Reversal Entry (Close 15462 < VWAP 15481.86)
+115   | 2025-10-27 11:27:00  | EXIT (SL)       | 15509.00   | -47.00     | SL Hit (Close 15509 >= SL 15483.00)
+116   | 2025-10-27 11:27:00  | ENTER LONG      | 15509.00   | 0.00       | SL Reversal Entry
+116   | 2025-10-27 13:21:00  | EXIT (SL)       | 15492.00   | -17.00     | SL Hit (Close 15492 <= SL 15506.66)
+117   | 2025-10-27 13:21:00  | ENTER SHORT     | 15492.00   | 0.00       | SL Reversal Entry
+117   | 2025-10-27 13:27:00  | EXIT (Reversal) | 15515.00   | -23.00     | Reversed to LONG
+118   | 2025-10-27 13:27:00  | ENTER LONG      | 15515.00   | 0.00       | Reversal Entry (Close 15515 > VWAP 15506.58)
+118   | 2025-10-27 13:33:00  | EXIT (SL)       | 15501.00   | -14.00     | SL Hit (Close 15501 <= SL 15502.00)
+119   | 2025-10-27 13:33:00  | ENTER SHORT     | 15501.00   | 0.00       | SL Reversal Entry
+119   | 2025-10-27 13:48:00  | EXIT (SL)       | 15523.00   | -22.00     | SL Hit (Close 15523 >= SL 15515.00)
+120   | 2025-10-27 13:48:00  | ENTER LONG      | 15523.00   | 0.00       | SL Reversal Entry
+120   | 2025-10-27 14:51:00  | EXIT (SL)       | 15504.00   | -19.00     | SL Hit (Close 15504 <= SL 15508.32)
+121   | 2025-10-27 14:51:00  | ENTER SHORT     | 15504.00   | 0.00       | SL Reversal Entry
+121   | 2025-10-27 15:00:00  | EXIT (Square Off) | 15508.00   | -4.00      | Auto Square Off at 15:00:00
+122   | 2025-10-28 09:15:00  | ENTER SHORT     | 15439.00   | 0.00       | Fresh Entry (Close 15439 < VWAP 15463.67)
+122   | 2025-10-28 09:48:00  | EXIT (SL)       | 15440.00   | -1.00      | SL Hit (Close 15440 >= SL 15432.65)
+123   | 2025-10-28 09:48:00  | ENTER LONG      | 15440.00   | 0.00       | SL Reversal Entry
+123   | 2025-10-28 09:51:00  | EXIT (SL)       | 15411.00   | -29.00     | SL Hit (Close 15411 <= SL 15428.00)
+124   | 2025-10-28 09:51:00  | ENTER SHORT     | 15411.00   | 0.00       | SL Reversal Entry
+124   | 2025-10-28 09:57:00  | EXIT (SL)       | 15460.00   | -49.00     | SL Hit (Close 15460 >= SL 15441.00)
+125   | 2025-10-28 09:57:00  | ENTER LONG      | 15460.00   | 0.00       | SL Reversal Entry
+125   | 2025-10-28 10:03:00  | EXIT (Reversal) | 15421.00   | -39.00     | Reversed to SHORT
+126   | 2025-10-28 10:03:00  | ENTER SHORT     | 15421.00   | 0.00       | Reversal Entry (Close 15421 < VWAP 15433.94)
+126   | 2025-10-28 10:06:00  | EXIT (Reversal) | 15440.00   | -19.00     | Reversed to LONG
+127   | 2025-10-28 10:06:00  | ENTER LONG      | 15440.00   | 0.00       | Reversal Entry (Close 15440 > VWAP 15433.90)
+127   | 2025-10-28 10:30:00  | EXIT (SL)       | 15435.00   | -5.00      | SL Hit (Close 15435 <= SL 15435.51)
+128   | 2025-10-28 10:30:00  | ENTER SHORT     | 15435.00   | 0.00       | SL Reversal Entry
+128   | 2025-10-28 10:54:00  | EXIT (SL)       | 15472.00   | -37.00     | SL Hit (Close 15472 >= SL 15434.40)
+129   | 2025-10-28 10:54:00  | ENTER LONG      | 15472.00   | 0.00       | SL Reversal Entry
+129   | 2025-10-28 11:12:00  | EXIT (SL)       | 15438.00   | -34.00     | SL Hit (Close 15438 <= SL 15444.45)
+130   | 2025-10-28 11:12:00  | ENTER SHORT     | 15438.00   | 0.00       | SL Reversal Entry
+130   | 2025-10-28 15:00:00  | EXIT (Square Off) | 15360.00   | 78.00      | Auto Square Off at 15:00:00
+131   | 2025-10-29 09:15:00  | ENTER LONG      | 15420.00   | 0.00       | Fresh Entry (Close 15420 > VWAP 15403.00)
+131   | 2025-10-29 09:18:00  | EXIT (Reversal) | 15364.00   | -56.00     | Reversed to SHORT
+132   | 2025-10-29 09:18:00  | ENTER SHORT     | 15364.00   | 0.00       | Reversal Entry (Close 15364 < VWAP 15391.90)
+132   | 2025-10-29 09:24:00  | EXIT (Reversal) | 15400.00   | -36.00     | Reversed to LONG
+133   | 2025-10-29 09:24:00  | ENTER LONG      | 15400.00   | 0.00       | Reversal Entry (Close 15400 > VWAP 15379.86)
+133   | 2025-10-29 09:33:00  | EXIT (Reversal) | 15382.00   | -18.00     | Reversed to SHORT
+134   | 2025-10-29 09:33:00  | ENTER SHORT     | 15382.00   | 0.00       | Reversal Entry (Close 15382 < VWAP 15391.06)
+134   | 2025-10-29 09:42:00  | EXIT (Reversal) | 15409.00   | -27.00     | Reversed to LONG
+135   | 2025-10-29 09:42:00  | ENTER LONG      | 15409.00   | 0.00       | Reversal Entry (Close 15409 > VWAP 15389.89)
+135   | 2025-10-29 09:48:00  | EXIT (Reversal) | 15372.00   | -37.00     | Reversed to SHORT
+136   | 2025-10-29 09:48:00  | ENTER SHORT     | 15372.00   | 0.00       | Reversal Entry (Close 15372 < VWAP 15389.93)
+136   | 2025-10-29 09:51:00  | EXIT (SL)       | 15397.00   | -25.00     | SL Hit (Close 15397 >= SL 15393.00)
+137   | 2025-10-29 09:51:00  | ENTER LONG      | 15397.00   | 0.00       | SL Reversal Entry
+137   | 2025-10-29 09:54:00  | EXIT (Reversal) | 15381.00   | -16.00     | Reversed to SHORT
+138   | 2025-10-29 09:54:00  | ENTER SHORT     | 15381.00   | 0.00       | Reversal Entry (Close 15381 < VWAP 15389.97)
+138   | 2025-10-29 10:21:00  | EXIT (SL)       | 15408.00   | -27.00     | SL Hit (Close 15408 >= SL 15388.13)
+139   | 2025-10-29 10:21:00  | ENTER LONG      | 15408.00   | 0.00       | SL Reversal Entry
+139   | 2025-10-29 15:00:00  | EXIT (Square Off) | 15473.00   | 65.00      | Auto Square Off at 15:00:00
+140   | 2025-10-30 09:15:00  | ENTER SHORT     | 15507.00   | 0.00       | Fresh Entry (Close 15507 < VWAP 15534.33)
+140   | 2025-10-30 09:21:00  | EXIT (Reversal) | 15566.00   | -59.00     | Reversed to LONG
+141   | 2025-10-30 09:21:00  | ENTER LONG      | 15566.00   | 0.00       | Reversal Entry (Close 15566 > VWAP 15536.09)
+141   | 2025-10-30 09:30:00  | EXIT (SL)       | 15526.00   | -40.00     | SL Hit (Close 15526 <= SL 15529.00)
+142   | 2025-10-30 09:30:00  | ENTER SHORT     | 15526.00   | 0.00       | SL Reversal Entry
+142   | 2025-10-30 09:36:00  | EXIT (Reversal) | 15555.00   | -29.00     | Reversed to LONG
+143   | 2025-10-30 09:36:00  | ENTER LONG      | 15555.00   | 0.00       | Reversal Entry (Close 15555 > VWAP 15538.70)
+143   | 2025-10-30 09:39:00  | EXIT (SL)       | 15537.00   | -18.00     | SL Hit (Close 15537 <= SL 15538.00)
+144   | 2025-10-30 09:39:00  | ENTER SHORT     | 15537.00   | 0.00       | SL Reversal Entry
+144   | 2025-10-30 10:12:00  | EXIT (SL)       | 15526.00   | 11.00      | SL Hit (Close 15526 >= SL 15524.83)
+145   | 2025-10-30 10:12:00  | ENTER LONG      | 15526.00   | 0.00       | SL Reversal Entry
+145   | 2025-10-30 10:15:00  | EXIT (Reversal) | 15523.00   | -3.00      | Reversed to SHORT
+146   | 2025-10-30 10:15:00  | ENTER SHORT     | 15523.00   | 0.00       | Reversal Entry (Close 15523 < VWAP 15524.52)
+146   | 2025-10-30 10:39:00  | EXIT (SL)       | 15529.00   | -6.00      | SL Hit (Close 15529 >= SL 15523.46)
+147   | 2025-10-30 10:39:00  | ENTER LONG      | 15529.00   | 0.00       | SL Reversal Entry
+147   | 2025-10-30 10:45:00  | EXIT (Reversal) | 15521.00   | -8.00      | Reversed to SHORT
+148   | 2025-10-30 10:45:00  | ENTER SHORT     | 15521.00   | 0.00       | Reversal Entry (Close 15521 < VWAP 15523.61)
+148   | 2025-10-30 10:48:00  | EXIT (Reversal) | 15528.00   | -7.00      | Reversed to LONG
+149   | 2025-10-30 10:48:00  | ENTER LONG      | 15528.00   | 0.00       | Reversal Entry (Close 15528 > VWAP 15523.59)
+149   | 2025-10-30 15:00:00  | EXIT (Square Off) | 15622.00   | 94.00      | Auto Square Off at 15:00:00
+150   | 2025-10-31 09:15:00  | ENTER LONG      | 15681.00   | 0.00       | Fresh Entry (Close 15681 > VWAP 15671.67)
+150   | 2025-10-31 09:24:00  | EXIT (Reversal) | 15686.00   | 5.00       | Reversed to SHORT
+151   | 2025-10-31 09:24:00  | ENTER SHORT     | 15686.00   | 0.00       | Reversal Entry (Close 15686 < VWAP 15686.15)
+151   | 2025-10-31 09:27:00  | EXIT (Reversal) | 15686.00   | 0.00       | Reversed to LONG
+152   | 2025-10-31 09:27:00  | ENTER LONG      | 15686.00   | 0.00       | Reversal Entry (Close 15686 > VWAP 15685.88)
+152   | 2025-10-31 09:51:00  | EXIT (SL)       | 15670.00   | -16.00     | SL Hit (Close 15670 <= SL 15697.87)
+153   | 2025-10-31 09:51:00  | ENTER SHORT     | 15670.00   | 0.00       | SL Reversal Entry
+153   | 2025-10-31 10:00:00  | EXIT (SL)       | 15715.00   | -45.00     | SL Hit (Close 15715 >= SL 15701.00)
+154   | 2025-10-31 10:00:00  | ENTER LONG      | 15715.00   | 0.00       | SL Reversal Entry
+154   | 2025-10-31 10:06:00  | EXIT (Reversal) | 15678.00   | -37.00     | Reversed to SHORT
+155   | 2025-10-31 10:06:00  | ENTER SHORT     | 15678.00   | 0.00       | Reversal Entry (Close 15678 < VWAP 15696.13)
+155   | 2025-10-31 11:33:00  | EXIT (SL)       | 15664.00   | 14.00      | SL Hit (Close 15664 >= SL 15663.51)
+156   | 2025-10-31 11:33:00  | ENTER LONG      | 15664.00   | 0.00       | SL Reversal Entry
+156   | 2025-10-31 11:36:00  | EXIT (SL)       | 15639.00   | -25.00     | SL Hit (Close 15639 <= SL 15651.00)
+157   | 2025-10-31 11:36:00  | ENTER SHORT     | 15639.00   | 0.00       | SL Reversal Entry
+157   | 2025-10-31 11:54:00  | EXIT (SL)       | 15669.00   | -30.00     | SL Hit (Close 15669 >= SL 15662.71)
+158   | 2025-10-31 11:54:00  | ENTER LONG      | 15669.00   | 0.00       | SL Reversal Entry
+158   | 2025-10-31 12:12:00  | EXIT (SL)       | 15652.00   | -17.00     | SL Hit (Close 15652 <= SL 15663.84)
+159   | 2025-10-31 12:12:00  | ENTER SHORT     | 15652.00   | 0.00       | SL Reversal Entry
+159   | 2025-10-31 12:21:00  | EXIT (Reversal) | 15666.00   | -14.00     | Reversed to LONG
+160   | 2025-10-31 12:21:00  | ENTER LONG      | 15666.00   | 0.00       | Reversal Entry (Close 15666 > VWAP 15663.70)
+160   | 2025-10-31 12:27:00  | EXIT (SL)       | 15652.00   | -14.00     | SL Hit (Close 15652 <= SL 15657.00)
+161   | 2025-10-31 12:27:00  | ENTER SHORT     | 15652.00   | 0.00       | SL Reversal Entry
+161   | 2025-10-31 12:30:00  | EXIT (Reversal) | 15665.00   | -13.00     | Reversed to LONG
+162   | 2025-10-31 12:30:00  | ENTER LONG      | 15665.00   | 0.00       | Reversal Entry (Close 15665 > VWAP 15663.65)
+162   | 2025-10-31 12:36:00  | EXIT (Reversal) | 15660.00   | -5.00      | Reversed to SHORT
+163   | 2025-10-31 12:36:00  | ENTER SHORT     | 15660.00   | 0.00       | Reversal Entry (Close 15660 < VWAP 15663.63)
+163   | 2025-10-31 13:03:00  | EXIT (SL)       | 15663.00   | -3.00      | SL Hit (Close 15663 >= SL 15662.97)
+164   | 2025-10-31 13:03:00  | ENTER LONG      | 15663.00   | 0.00       | SL Reversal Entry
+164   | 2025-10-31 13:06:00  | EXIT (Reversal) | 15656.00   | -7.00      | Reversed to SHORT
+165   | 2025-10-31 13:06:00  | ENTER SHORT     | 15656.00   | 0.00       | Reversal Entry (Close 15656 < VWAP 15662.78)
+165   | 2025-10-31 13:12:00  | EXIT (SL)       | 15670.00   | -14.00     | SL Hit (Close 15670 >= SL 15663.00)
+166   | 2025-10-31 13:12:00  | ENTER LONG      | 15670.00   | 0.00       | SL Reversal Entry
+166   | 2025-10-31 13:21:00  | EXIT (SL)       | 15635.00   | -35.00     | SL Hit (Close 15635 <= SL 15647.00)
+167   | 2025-10-31 13:21:00  | ENTER SHORT     | 15635.00   | 0.00       | SL Reversal Entry
+167   | 2025-10-31 15:00:00  | EXIT (Square Off) | 15513.00   | 122.00     | Auto Square Off at 15:00:00
+168   | 2025-11-03 09:15:00  | ENTER SHORT     | 15450.00   | 0.00       | Fresh Entry (Close 15450 < VWAP 15460.67)
+168   | 2025-11-03 10:27:00  | EXIT (SL)       | 15386.00   | 64.00      | SL Hit (Close 15386 >= SL 15371.30)
+169   | 2025-11-03 10:27:00  | ENTER LONG      | 15386.00   | 0.00       | SL Reversal Entry
+169   | 2025-11-03 10:33:00  | EXIT (Reversal) | 15362.00   | -24.00     | Reversed to SHORT
+170   | 2025-11-03 10:33:00  | ENTER SHORT     | 15362.00   | 0.00       | Reversal Entry (Close 15362 < VWAP 15371.33)
+170   | 2025-11-03 10:39:00  | EXIT (Reversal) | 15378.00   | -16.00     | Reversed to LONG
+171   | 2025-11-03 10:39:00  | ENTER LONG      | 15378.00   | 0.00       | Reversal Entry (Close 15378 > VWAP 15371.66)
+171   | 2025-11-03 15:00:00  | EXIT (Square Off) | 15474.00   | 96.00      | Auto Square Off at 15:00:00
+172   | 2025-11-04 09:15:00  | ENTER SHORT     | 15485.00   | 0.00       | Fresh Entry (Close 15485 < VWAP 15490.67)
+172   | 2025-11-04 09:24:00  | EXIT (Reversal) | 15484.00   | 1.00       | Reversed to LONG
+173   | 2025-11-04 09:24:00  | ENTER LONG      | 15484.00   | 0.00       | Reversal Entry (Close 15484 > VWAP 15480.83)
+173   | 2025-11-04 09:27:00  | EXIT (Reversal) | 15465.00   | -19.00     | Reversed to SHORT
+174   | 2025-11-04 09:27:00  | ENTER SHORT     | 15465.00   | 0.00       | Reversal Entry (Close 15465 < VWAP 15479.90)
+174   | 2025-11-04 09:54:00  | EXIT (SL)       | 15502.00   | -37.00     | SL Hit (Close 15502 >= SL 15467.45)
+175   | 2025-11-04 09:54:00  | ENTER LONG      | 15502.00   | 0.00       | SL Reversal Entry
+175   | 2025-11-04 09:57:00  | EXIT (SL)       | 15448.00   | -54.00     | SL Hit (Close 15448 <= SL 15450.00)
+176   | 2025-11-04 09:57:00  | ENTER SHORT     | 15448.00   | 0.00       | SL Reversal Entry
+176   | 2025-11-04 10:00:00  | EXIT (Reversal) | 15478.00   | -30.00     | Reversed to LONG
+177   | 2025-11-04 10:00:00  | ENTER LONG      | 15478.00   | 0.00       | Reversal Entry (Close 15478 > VWAP 15469.26)
+177   | 2025-11-04 10:06:00  | EXIT (Reversal) | 15465.00   | -13.00     | Reversed to SHORT
+178   | 2025-11-04 10:06:00  | ENTER SHORT     | 15465.00   | 0.00       | Reversal Entry (Close 15465 < VWAP 15469.16)
+178   | 2025-11-04 15:00:00  | EXIT (Square Off) | 15263.00   | 202.00     | Auto Square Off at 15:00:00
+179   | 2025-11-06 09:15:00  | ENTER SHORT     | 15241.00   | 0.00       | Fresh Entry (Close 15241 < VWAP 15250.33)
+179   | 2025-11-06 09:18:00  | EXIT (Reversal) | 15296.00   | -55.00     | Reversed to LONG
+180   | 2025-11-06 09:18:00  | ENTER LONG      | 15296.00   | 0.00       | Reversal Entry (Close 15296 > VWAP 15257.24)
+180   | 2025-11-06 10:09:00  | EXIT (SL)       | 15155.00   | -141.00    | SL Hit (Close 15155 <= SL 15280.20)
+181   | 2025-11-06 10:09:00  | ENTER SHORT     | 15155.00   | 0.00       | SL Reversal Entry
+181   | 2025-11-06 15:00:00  | EXIT (Square Off) | 15070.00   | 85.00      | Auto Square Off at 15:00:00
+182   | 2025-11-07 09:15:00  | ENTER SHORT     | 14870.00   | 0.00       | Fresh Entry (Close 14870 < VWAP 14907.00)
+182   | 2025-11-07 09:36:00  | EXIT (SL)       | 14820.00   | 50.00      | SL Hit (Close 14820 >= SL 14802.14)
+183   | 2025-11-07 09:36:00  | ENTER LONG      | 14820.00   | 0.00       | SL Reversal Entry
+183   | 2025-11-07 09:54:00  | EXIT (SL)       | 14815.00   | -5.00      | SL Hit (Close 14815 <= SL 14816.27)
+184   | 2025-11-07 09:54:00  | ENTER SHORT     | 14815.00   | 0.00       | SL Reversal Entry
+184   | 2025-11-07 09:57:00  | EXIT (Reversal) | 14817.00   | -2.00      | Reversed to LONG
+185   | 2025-11-07 09:57:00  | ENTER LONG      | 14817.00   | 0.00       | Reversal Entry (Close 14817 > VWAP 14816.17)
+185   | 2025-11-07 10:00:00  | EXIT (Reversal) | 14810.00   | -7.00      | Reversed to SHORT
+186   | 2025-11-07 10:00:00  | ENTER SHORT     | 14810.00   | 0.00       | Reversal Entry (Close 14810 < VWAP 14816.05)
+186   | 2025-11-07 10:06:00  | EXIT (SL)       | 14866.00   | -56.00     | SL Hit (Close 14866 >= SL 14818.00)
+187   | 2025-11-07 10:06:00  | ENTER LONG      | 14866.00   | 0.00       | SL Reversal Entry
+187   | 2025-11-07 11:03:00  | EXIT (SL)       | 14820.00   | -46.00     | SL Hit (Close 14820 <= SL 14831.02)
+188   | 2025-11-07 11:03:00  | ENTER SHORT     | 14820.00   | 0.00       | SL Reversal Entry
+188   | 2025-11-07 11:12:00  | EXIT (Reversal) | 14841.00   | -21.00     | Reversed to LONG
+189   | 2025-11-07 11:12:00  | ENTER LONG      | 14841.00   | 0.00       | Reversal Entry (Close 14841 > VWAP 14830.81)
+189   | 2025-11-07 11:18:00  | EXIT (SL)       | 14812.00   | -29.00     | SL Hit (Close 14812 <= SL 14818.00)
+190   | 2025-11-07 11:18:00  | ENTER SHORT     | 14812.00   | 0.00       | SL Reversal Entry
+190   | 2025-11-07 11:27:00  | EXIT (Reversal) | 14831.00   | -19.00     | Reversed to LONG
+191   | 2025-11-07 11:27:00  | ENTER LONG      | 14831.00   | 0.00       | Reversal Entry (Close 14831 > VWAP 14830.01)
+191   | 2025-11-07 11:30:00  | EXIT (Reversal) | 14828.00   | -3.00      | Reversed to SHORT
+192   | 2025-11-07 11:30:00  | ENTER SHORT     | 14828.00   | 0.00       | Reversal Entry (Close 14828 < VWAP 14830.06)
+192   | 2025-11-07 12:18:00  | EXIT (SL)       | 14825.00   | 3.00       | SL Hit (Close 14825 >= SL 14814.98)
+193   | 2025-11-07 12:18:00  | ENTER LONG      | 14825.00   | 0.00       | SL Reversal Entry
+193   | 2025-11-07 15:00:00  | EXIT (Square Off) | 14889.00   | 64.00      | Auto Square Off at 15:00:00
+194   | 2025-11-10 09:15:00  | ENTER SHORT     | 14823.00   | 0.00       | Fresh Entry (Close 14823 < VWAP 14826.00)
+194   | 2025-11-10 09:30:00  | EXIT (Reversal) | 14812.00   | 11.00      | Reversed to LONG
+195   | 2025-11-10 09:30:00  | ENTER LONG      | 14812.00   | 0.00       | Reversal Entry (Close 14812 > VWAP 14805.84)
+195   | 2025-11-10 09:42:00  | EXIT (SL)       | 14765.00   | -47.00     | SL Hit (Close 14765 <= SL 14790.00)
+196   | 2025-11-10 09:42:00  | ENTER SHORT     | 14765.00   | 0.00       | SL Reversal Entry
+196   | 2025-11-10 10:18:00  | EXIT (SL)       | 14799.00   | -34.00     | SL Hit (Close 14799 >= SL 14785.47)
+197   | 2025-11-10 10:18:00  | ENTER LONG      | 14799.00   | 0.00       | SL Reversal Entry
+197   | 2025-11-10 10:24:00  | EXIT (Reversal) | 14785.00   | -14.00     | Reversed to SHORT
+198   | 2025-11-10 10:24:00  | ENTER SHORT     | 14785.00   | 0.00       | Reversal Entry (Close 14785 < VWAP 14786.04)
+198   | 2025-11-10 10:27:00  | EXIT (SL)       | 14812.00   | -27.00     | SL Hit (Close 14812 >= SL 14806.00)
+199   | 2025-11-10 10:27:00  | ENTER LONG      | 14812.00   | 0.00       | SL Reversal Entry
+199   | 2025-11-10 10:33:00  | EXIT (SL)       | 14788.00   | -24.00     | SL Hit (Close 14788 <= SL 14788.00)
+200   | 2025-11-10 10:33:00  | ENTER SHORT     | 14788.00   | 0.00       | SL Reversal Entry
+200   | 2025-11-10 10:36:00  | EXIT (Reversal) | 14794.00   | -6.00      | Reversed to LONG
+201   | 2025-11-10 10:36:00  | ENTER LONG      | 14794.00   | 0.00       | Reversal Entry (Close 14794 > VWAP 14787.91)
+201   | 2025-11-10 10:45:00  | EXIT (Reversal) | 14786.00   | -8.00      | Reversed to SHORT
+202   | 2025-11-10 10:45:00  | ENTER SHORT     | 14786.00   | 0.00       | Reversal Entry (Close 14786 < VWAP 14788.07)
+202   | 2025-11-10 10:48:00  | EXIT (Reversal) | 14789.00   | -3.00      | Reversed to LONG
+203   | 2025-11-10 10:48:00  | ENTER LONG      | 14789.00   | 0.00       | Reversal Entry (Close 14789 > VWAP 14788.08)
+203   | 2025-11-10 10:54:00  | EXIT (Reversal) | 14788.00   | -1.00      | Reversed to SHORT
+204   | 2025-11-10 10:54:00  | ENTER SHORT     | 14788.00   | 0.00       | Reversal Entry (Close 14788 < VWAP 14788.53)
+204   | 2025-11-10 10:57:00  | EXIT (SL)       | 14813.00   | -25.00     | SL Hit (Close 14813 >= SL 14811.00)
+205   | 2025-11-10 10:57:00  | ENTER LONG      | 14813.00   | 0.00       | SL Reversal Entry
+205   | 2025-11-10 15:00:00  | EXIT (Square Off) | 14852.00   | 39.00      | Auto Square Off at 15:00:00
+206   | 2025-11-11 09:15:00  | ENTER SHORT     | 14895.00   | 0.00       | Fresh Entry (Close 14895 < VWAP 14910.33)
+206   | 2025-11-11 09:21:00  | EXIT (Reversal) | 14886.00   | 9.00       | Reversed to LONG
+207   | 2025-11-11 09:21:00  | ENTER LONG      | 14886.00   | 0.00       | Reversal Entry (Close 14886 > VWAP 14883.52)
+207   | 2025-11-11 09:27:00  | EXIT (Reversal) | 14861.00   | -25.00     | Reversed to SHORT
+208   | 2025-11-11 09:27:00  | ENTER SHORT     | 14861.00   | 0.00       | Reversal Entry (Close 14861 < VWAP 14881.41)
+208   | 2025-11-11 09:33:00  | EXIT (SL)       | 14894.00   | -33.00     | SL Hit (Close 14894 >= SL 14894.00)
+209   | 2025-11-11 09:33:00  | ENTER LONG      | 14894.00   | 0.00       | SL Reversal Entry
+209   | 2025-11-11 09:54:00  | EXIT (SL)       | 14894.00   | 0.00       | SL Hit (Close 14894 <= SL 14897.41)
+210   | 2025-11-11 09:54:00  | ENTER SHORT     | 14894.00   | 0.00       | SL Reversal Entry
+210   | 2025-11-11 10:06:00  | EXIT (SL)       | 14914.00   | -20.00     | SL Hit (Close 14914 >= SL 14907.00)
+211   | 2025-11-11 10:06:00  | ENTER LONG      | 14914.00   | 0.00       | SL Reversal Entry
+211   | 2025-11-11 10:18:00  | EXIT (SL)       | 14878.00   | -36.00     | SL Hit (Close 14878 <= SL 14884.00)
+212   | 2025-11-11 10:18:00  | ENTER SHORT     | 14878.00   | 0.00       | SL Reversal Entry
+212   | 2025-11-11 12:27:00  | EXIT (SL)       | 14850.00   | 28.00      | SL Hit (Close 14850 >= SL 14840.33)
+213   | 2025-11-11 12:27:00  | ENTER LONG      | 14850.00   | 0.00       | SL Reversal Entry
+213   | 2025-11-11 15:00:00  | EXIT (Square Off) | 15027.00   | 177.00     | Auto Square Off at 15:00:00
+214   | 2025-11-12 09:15:00  | ENTER LONG      | 15213.00   | 0.00       | Fresh Entry (Close 15213 > VWAP 15190.33)
+214   | 2025-11-12 09:18:00  | EXIT (Reversal) | 15129.00   | -84.00     | Reversed to SHORT
+215   | 2025-11-12 09:18:00  | ENTER SHORT     | 15129.00   | 0.00       | Reversal Entry (Close 15129 < VWAP 15158.84)
+215   | 2025-11-12 09:51:00  | EXIT (SL)       | 15128.00   | 1.00       | SL Hit (Close 15128 >= SL 15126.80)
+216   | 2025-11-12 09:51:00  | ENTER LONG      | 15128.00   | 0.00       | SL Reversal Entry
+216   | 2025-11-12 10:00:00  | EXIT (Reversal) | 15115.00   | -13.00     | Reversed to SHORT
+217   | 2025-11-12 10:00:00  | ENTER SHORT     | 15115.00   | 0.00       | Reversal Entry (Close 15115 < VWAP 15129.14)
+217   | 2025-11-12 10:36:00  | EXIT (SL)       | 15135.00   | -20.00     | SL Hit (Close 15135 >= SL 15119.56)
+218   | 2025-11-12 10:36:00  | ENTER LONG      | 15135.00   | 0.00       | SL Reversal Entry
+218   | 2025-11-12 10:42:00  | EXIT (Reversal) | 15120.00   | -15.00     | Reversed to SHORT
+219   | 2025-11-12 10:42:00  | ENTER SHORT     | 15120.00   | 0.00       | Reversal Entry (Close 15120 < VWAP 15120.80)
+219   | 2025-11-12 11:18:00  | EXIT (SL)       | 15122.00   | -2.00      | SL Hit (Close 15122 >= SL 15117.89)
+220   | 2025-11-12 11:18:00  | ENTER LONG      | 15122.00   | 0.00       | SL Reversal Entry
+220   | 2025-11-12 11:21:00  | EXIT (Reversal) | 15114.00   | -8.00      | Reversed to SHORT
+221   | 2025-11-12 11:21:00  | ENTER SHORT     | 15114.00   | 0.00       | Reversal Entry (Close 15114 < VWAP 15117.96)
+221   | 2025-11-12 11:24:00  | EXIT (Reversal) | 15128.00   | -14.00     | Reversed to LONG
+222   | 2025-11-12 11:24:00  | ENTER LONG      | 15128.00   | 0.00       | Reversal Entry (Close 15128 > VWAP 15118.03)
+222   | 2025-11-12 15:00:00  | EXIT (Square Off) | 15310.00   | 182.00     | Auto Square Off at 15:00:00
+223   | 2025-11-13 09:15:00  | ENTER SHORT     | 15290.00   | 0.00       | Fresh Entry (Close 15290 < VWAP 15300.00)
+223   | 2025-11-13 09:18:00  | EXIT (Reversal) | 15356.00   | -66.00     | Reversed to LONG
+224   | 2025-11-13 09:18:00  | ENTER LONG      | 15356.00   | 0.00       | Reversal Entry (Close 15356 > VWAP 15318.94)
+224   | 2025-11-13 09:21:00  | EXIT (Reversal) | 15317.00   | -39.00     | Reversed to SHORT
+225   | 2025-11-13 09:21:00  | ENTER SHORT     | 15317.00   | 0.00       | Reversal Entry (Close 15317 < VWAP 15319.03)
+225   | 2025-11-13 09:24:00  | EXIT (Reversal) | 15346.00   | -29.00     | Reversed to LONG
+226   | 2025-11-13 09:24:00  | ENTER LONG      | 15346.00   | 0.00       | Reversal Entry (Close 15346 > VWAP 15320.96)
+226   | 2025-11-13 09:33:00  | EXIT (Reversal) | 15337.00   | -9.00      | Reversed to SHORT
+227   | 2025-11-13 09:33:00  | ENTER SHORT     | 15337.00   | 0.00       | Reversal Entry (Close 15337 < VWAP 15338.98)
+227   | 2025-11-13 09:36:00  | EXIT (Reversal) | 15349.00   | -12.00     | Reversed to LONG
+228   | 2025-11-13 09:36:00  | ENTER LONG      | 15349.00   | 0.00       | Reversal Entry (Close 15349 > VWAP 15339.40)
+228   | 2025-11-13 14:03:00  | EXIT (SL)       | 15425.00   | 76.00      | SL Hit (Close 15425 <= SL 15453.94)
+229   | 2025-11-13 14:03:00  | ENTER SHORT     | 15425.00   | 0.00       | SL Reversal Entry
+229   | 2025-11-13 15:00:00  | EXIT (Square Off) | 15328.00   | 97.00      | Auto Square Off at 15:00:00
+230   | 2025-11-14 09:15:00  | ENTER LONG      | 15298.00   | 0.00       | Fresh Entry (Close 15298 > VWAP 15284.33)
+230   | 2025-11-14 10:45:00  | EXIT (SL)       | 15445.00   | 147.00     | SL Hit (Close 15445 <= SL 15458.66)
+231   | 2025-11-14 10:45:00  | ENTER SHORT     | 15445.00   | 0.00       | SL Reversal Entry
+231   | 2025-11-14 11:06:00  | EXIT (SL)       | 15473.00   | -28.00     | SL Hit (Close 15473 >= SL 15452.64)
+232   | 2025-11-14 11:06:00  | ENTER LONG      | 15473.00   | 0.00       | SL Reversal Entry
+232   | 2025-11-14 11:09:00  | EXIT (SL)       | 15461.00   | -12.00     | SL Hit (Close 15461 <= SL 15465.00)
+233   | 2025-11-14 11:09:00  | ENTER SHORT     | 15461.00   | 0.00       | SL Reversal Entry
+233   | 2025-11-14 11:12:00  | EXIT (Reversal) | 15463.00   | -2.00      | Reversed to LONG
+234   | 2025-11-14 11:12:00  | ENTER LONG      | 15463.00   | 0.00       | Reversal Entry (Close 15463 > VWAP 15452.99)
+234   | 2025-11-14 11:15:00  | EXIT (SL)       | 15445.00   | -18.00     | SL Hit (Close 15445 <= SL 15445.00)
+235   | 2025-11-14 11:15:00  | ENTER SHORT     | 15445.00   | 0.00       | SL Reversal Entry
+235   | 2025-11-14 11:36:00  | EXIT (SL)       | 15455.00   | -10.00     | SL Hit (Close 15455 >= SL 15452.85)
+236   | 2025-11-14 11:36:00  | ENTER LONG      | 15455.00   | 0.00       | SL Reversal Entry
+236   | 2025-11-14 11:39:00  | EXIT (Reversal) | 15439.00   | -16.00     | Reversed to SHORT
+237   | 2025-11-14 11:39:00  | ENTER SHORT     | 15439.00   | 0.00       | Reversal Entry (Close 15439 < VWAP 15452.71)
+237   | 2025-11-14 12:00:00  | EXIT (SL)       | 15452.00   | -13.00     | SL Hit (Close 15452 >= SL 15450.61)
+238   | 2025-11-14 12:00:00  | ENTER LONG      | 15452.00   | 0.00       | SL Reversal Entry
+238   | 2025-11-14 12:03:00  | EXIT (Reversal) | 15448.00   | -4.00      | Reversed to SHORT
+239   | 2025-11-14 12:03:00  | ENTER SHORT     | 15448.00   | 0.00       | Reversal Entry (Close 15448 < VWAP 15450.58)
+239   | 2025-11-14 12:06:00  | EXIT (SL)       | 15477.00   | -29.00     | SL Hit (Close 15477 >= SL 15460.00)
+240   | 2025-11-14 12:06:00  | ENTER LONG      | 15477.00   | 0.00       | SL Reversal Entry
+240   | 2025-11-14 13:00:00  | EXIT (SL)       | 15414.00   | -63.00     | SL Hit (Close 15414 <= SL 15461.20)
+241   | 2025-11-14 13:00:00  | ENTER SHORT     | 15414.00   | 0.00       | SL Reversal Entry
+241   | 2025-11-14 15:00:00  | EXIT (Square Off) | 15384.00   | 30.00      | Auto Square Off at 15:00:00
+242   | 2025-11-17 09:15:00  | ENTER SHORT     | 15392.00   | 0.00       | Fresh Entry (Close 15392 < VWAP 15434.67)
+242   | 2025-11-17 09:21:00  | EXIT (Reversal) | 15447.00   | -55.00     | Reversed to LONG
+243   | 2025-11-17 09:21:00  | ENTER LONG      | 15447.00   | 0.00       | Reversal Entry (Close 15447 > VWAP 15426.75)
+243   | 2025-11-17 15:00:00  | EXIT (Square Off) | 15601.00   | 154.00     | Auto Square Off at 15:00:00
+244   | 2025-11-18 09:15:00  | ENTER SHORT     | 15649.00   | 0.00       | Fresh Entry (Close 15649 < VWAP 15649.33)
+244   | 2025-11-18 09:21:00  | EXIT (Reversal) | 15632.00   | 17.00      | Reversed to LONG
+245   | 2025-11-18 09:21:00  | ENTER LONG      | 15632.00   | 0.00       | Reversal Entry (Close 15632 > VWAP 15626.75)
+245   | 2025-11-18 09:24:00  | EXIT (Reversal) | 15619.00   | -13.00     | Reversed to SHORT
+246   | 2025-11-18 09:24:00  | ENTER SHORT     | 15619.00   | 0.00       | Reversal Entry (Close 15619 < VWAP 15626.56)
+246   | 2025-11-18 09:27:00  | EXIT (SL)       | 15650.00   | -31.00     | SL Hit (Close 15650 >= SL 15641.00)
+247   | 2025-11-18 09:27:00  | ENTER LONG      | 15650.00   | 0.00       | SL Reversal Entry
+247   | 2025-11-18 09:36:00  | EXIT (SL)       | 15615.00   | -35.00     | SL Hit (Close 15615 <= SL 15621.00)
+248   | 2025-11-18 09:36:00  | ENTER SHORT     | 15615.00   | 0.00       | SL Reversal Entry
+248   | 2025-11-18 10:18:00  | EXIT (SL)       | 15619.00   | -4.00      | SL Hit (Close 15619 >= SL 15608.25)
+249   | 2025-11-18 10:18:00  | ENTER LONG      | 15619.00   | 0.00       | SL Reversal Entry
+249   | 2025-11-18 10:21:00  | EXIT (Reversal) | 15598.00   | -21.00     | Reversed to SHORT
+250   | 2025-11-18 10:21:00  | ENTER SHORT     | 15598.00   | 0.00       | Reversal Entry (Close 15598 < VWAP 15608.05)
+250   | 2025-11-18 10:48:00  | EXIT (SL)       | 15619.00   | -21.00     | SL Hit (Close 15619 >= SL 15601.79)
+251   | 2025-11-18 10:48:00  | ENTER LONG      | 15619.00   | 0.00       | SL Reversal Entry
+251   | 2025-11-18 15:00:00  | EXIT (Square Off) | 15683.00   | 64.00      | Auto Square Off at 15:00:00
+252   | 2025-11-19 09:15:00  | ENTER SHORT     | 15655.00   | 0.00       | Fresh Entry (Close 15655 < VWAP 15685.00)
+252   | 2025-11-19 09:21:00  | EXIT (Reversal) | 15687.00   | -32.00     | Reversed to LONG
+253   | 2025-11-19 09:21:00  | ENTER LONG      | 15687.00   | 0.00       | Reversal Entry (Close 15687 > VWAP 15668.23)
+253   | 2025-11-19 09:33:00  | EXIT (Reversal) | 15655.00   | -32.00     | Reversed to SHORT
+254   | 2025-11-19 09:33:00  | ENTER SHORT     | 15655.00   | 0.00       | Reversal Entry (Close 15655 < VWAP 15675.76)
+254   | 2025-11-19 09:51:00  | EXIT (SL)       | 15677.00   | -22.00     | SL Hit (Close 15677 >= SL 15671.74)
+255   | 2025-11-19 09:51:00  | ENTER LONG      | 15677.00   | 0.00       | SL Reversal Entry
+255   | 2025-11-19 10:03:00  | EXIT (Reversal) | 15668.00   | -9.00      | Reversed to SHORT
+256   | 2025-11-19 10:03:00  | ENTER SHORT     | 15668.00   | 0.00       | Reversal Entry (Close 15668 < VWAP 15671.91)
+256   | 2025-11-19 10:06:00  | EXIT (SL)       | 15684.00   | -16.00     | SL Hit (Close 15684 >= SL 15680.00)
+257   | 2025-11-19 10:06:00  | ENTER LONG      | 15684.00   | 0.00       | SL Reversal Entry
+257   | 2025-11-19 11:03:00  | EXIT (SL)       | 15670.00   | -14.00     | SL Hit (Close 15670 <= SL 15680.94)
+258   | 2025-11-19 11:03:00  | ENTER SHORT     | 15670.00   | 0.00       | SL Reversal Entry
+258   | 2025-11-19 12:00:00  | EXIT (SL)       | 15680.00   | -10.00     | SL Hit (Close 15680 >= SL 15675.28)
+259   | 2025-11-19 12:00:00  | ENTER LONG      | 15680.00   | 0.00       | SL Reversal Entry
+259   | 2025-11-19 13:24:00  | EXIT (SL)       | 15689.00   | 9.00       | SL Hit (Close 15689 <= SL 15695.96)
+260   | 2025-11-19 13:24:00  | ENTER SHORT     | 15689.00   | 0.00       | SL Reversal Entry
+260   | 2025-11-19 15:00:00  | EXIT (Square Off) | 15617.00   | 72.00      | Auto Square Off at 15:00:00
+261   | 2025-11-20 09:15:00  | ENTER SHORT     | 15496.00   | 0.00       | Fresh Entry (Close 15496 < VWAP 15515.33)
+261   | 2025-11-20 09:21:00  | EXIT (Reversal) | 15521.00   | -25.00     | Reversed to LONG
+262   | 2025-11-20 09:21:00  | ENTER LONG      | 15521.00   | 0.00       | Reversal Entry (Close 15521 > VWAP 15505.22)
+262   | 2025-11-20 09:27:00  | EXIT (SL)       | 15444.00   | -77.00     | SL Hit (Close 15444 <= SL 15474.00)
+263   | 2025-11-20 09:27:00  | ENTER SHORT     | 15444.00   | 0.00       | SL Reversal Entry
+263   | 2025-11-20 10:39:00  | EXIT (SL)       | 15445.00   | -1.00      | SL Hit (Close 15445 >= SL 15433.76)
+264   | 2025-11-20 10:39:00  | ENTER LONG      | 15445.00   | 0.00       | SL Reversal Entry
+264   | 2025-11-20 10:42:00  | EXIT (Reversal) | 15425.00   | -20.00     | Reversed to SHORT
+265   | 2025-11-20 10:42:00  | ENTER SHORT     | 15425.00   | 0.00       | Reversal Entry (Close 15425 < VWAP 15433.60)
+265   | 2025-11-20 12:18:00  | EXIT (SL)       | 15427.00   | -2.00      | SL Hit (Close 15427 >= SL 15423.76)
+266   | 2025-11-20 12:18:00  | ENTER LONG      | 15427.00   | 0.00       | SL Reversal Entry
+266   | 2025-11-20 12:21:00  | EXIT (SL)       | 15392.00   | -35.00     | SL Hit (Close 15392 <= SL 15409.00)
+267   | 2025-11-20 12:21:00  | ENTER SHORT     | 15392.00   | 0.00       | SL Reversal Entry
+267   | 2025-11-20 12:45:00  | EXIT (SL)       | 15433.00   | -41.00     | SL Hit (Close 15433 >= SL 15421.33)
+268   | 2025-11-20 12:45:00  | ENTER LONG      | 15433.00   | 0.00       | SL Reversal Entry
+268   | 2025-11-20 13:06:00  | EXIT (SL)       | 15422.00   | -11.00     | SL Hit (Close 15422 <= SL 15422.45)
+269   | 2025-11-20 13:06:00  | ENTER SHORT     | 15422.00   | 0.00       | SL Reversal Entry
+269   | 2025-11-20 13:36:00  | EXIT (SL)       | 15434.00   | -12.00     | SL Hit (Close 15434 >= SL 15421.69)
+270   | 2025-11-20 13:36:00  | ENTER LONG      | 15434.00   | 0.00       | SL Reversal Entry
+270   | 2025-11-20 13:57:00  | EXIT (SL)       | 15411.00   | -23.00     | SL Hit (Close 15411 <= SL 15422.45)
+271   | 2025-11-20 13:57:00  | ENTER SHORT     | 15411.00   | 0.00       | SL Reversal Entry
+271   | 2025-11-20 14:03:00  | EXIT (Reversal) | 15426.00   | -15.00     | Reversed to LONG
+272   | 2025-11-20 14:03:00  | ENTER LONG      | 15426.00   | 0.00       | Reversal Entry (Close 15426 > VWAP 15422.39)
+272   | 2025-11-20 14:06:00  | EXIT (SL)       | 15414.00   | -12.00     | SL Hit (Close 15414 <= SL 15416.00)
+273   | 2025-11-20 14:06:00  | ENTER SHORT     | 15414.00   | 0.00       | SL Reversal Entry
+273   | 2025-11-20 15:00:00  | EXIT (Square Off) | 15300.00   | 114.00     | Auto Square Off at 15:00:00
+274   | 2025-11-21 09:15:00  | ENTER SHORT     | 15170.00   | 0.00       | Fresh Entry (Close 15170 < VWAP 15212.00)
+274   | 2025-11-21 09:18:00  | EXIT (Reversal) | 15245.00   | -75.00     | Reversed to LONG
+275   | 2025-11-21 09:18:00  | ENTER LONG      | 15245.00   | 0.00       | Reversal Entry (Close 15245 > VWAP 15216.14)
+275   | 2025-11-21 09:33:00  | EXIT (Reversal) | 15215.00   | -30.00     | Reversed to SHORT
+276   | 2025-11-21 09:33:00  | ENTER SHORT     | 15215.00   | 0.00       | Reversal Entry (Close 15215 < VWAP 15220.61)
+276   | 2025-11-21 09:39:00  | EXIT (Reversal) | 15219.00   | -4.00      | Reversed to LONG
+277   | 2025-11-21 09:39:00  | ENTER LONG      | 15219.00   | 0.00       | Reversal Entry (Close 15219 > VWAP 15217.35)
+277   | 2025-11-21 09:42:00  | EXIT (Reversal) | 15206.00   | -13.00     | Reversed to SHORT
+278   | 2025-11-21 09:42:00  | ENTER SHORT     | 15206.00   | 0.00       | Reversal Entry (Close 15206 < VWAP 15217.18)
+278   | 2025-11-21 12:24:00  | EXIT (SL)       | 15100.00   | 106.00     | SL Hit (Close 15100 >= SL 15093.33)
+279   | 2025-11-21 12:24:00  | ENTER LONG      | 15100.00   | 0.00       | SL Reversal Entry
+279   | 2025-11-21 12:36:00  | EXIT (SL)       | 15085.00   | -15.00     | SL Hit (Close 15085 <= SL 15090.00)
+280   | 2025-11-21 12:36:00  | ENTER SHORT     | 15085.00   | 0.00       | SL Reversal Entry
+280   | 2025-11-21 15:00:00  | EXIT (Square Off) | 14970.00   | 115.00     | Auto Square Off at 15:00:00
+281   | 2025-11-24 09:15:00  | ENTER SHORT     | 14868.00   | 0.00       | Fresh Entry (Close 14868 < VWAP 14906.33)
+281   | 2025-11-24 09:18:00  | EXIT (Reversal) | 14927.00   | -59.00     | Reversed to LONG
+282   | 2025-11-24 09:18:00  | ENTER LONG      | 14927.00   | 0.00       | Reversal Entry (Close 14927 > VWAP 14905.94)
+282   | 2025-11-24 09:21:00  | EXIT (Reversal) | 14883.00   | -44.00     | Reversed to SHORT
+283   | 2025-11-24 09:21:00  | ENTER SHORT     | 14883.00   | 0.00       | Reversal Entry (Close 14883 < VWAP 14905.45)
+283   | 2025-11-24 09:27:00  | EXIT (Reversal) | 14915.00   | -32.00     | Reversed to LONG
+284   | 2025-11-24 09:27:00  | ENTER LONG      | 14915.00   | 0.00       | Reversal Entry (Close 14915 > VWAP 14904.12)
+284   | 2025-11-24 09:30:00  | EXIT (SL)       | 14861.00   | -54.00     | SL Hit (Close 14861 <= SL 14890.00)
+285   | 2025-11-24 09:30:00  | ENTER SHORT     | 14861.00   | 0.00       | SL Reversal Entry
+285   | 2025-11-24 15:00:00  | EXIT (Square Off) | 14686.00   | 175.00     | Auto Square Off at 15:00:00
+286   | 2025-11-25 09:15:00  | ENTER LONG      | 14676.00   | 0.00       | Fresh Entry (Close 14676 > VWAP 14641.00)
+286   | 2025-11-25 09:27:00  | EXIT (Reversal) | 14681.00   | 5.00       | Reversed to SHORT
+287   | 2025-11-25 09:27:00  | ENTER SHORT     | 14681.00   | 0.00       | Reversal Entry (Close 14681 < VWAP 14696.82)
+287   | 2025-11-25 09:30:00  | EXIT (SL)       | 14728.00   | -47.00     | SL Hit (Close 14728 >= SL 14724.00)
+288   | 2025-11-25 09:30:00  | ENTER LONG      | 14728.00   | 0.00       | SL Reversal Entry
+288   | 2025-11-25 09:36:00  | EXIT (Reversal) | 14688.00   | -40.00     | Reversed to SHORT
+289   | 2025-11-25 09:36:00  | ENTER SHORT     | 14688.00   | 0.00       | Reversal Entry (Close 14688 < VWAP 14697.90)
+289   | 2025-11-25 09:54:00  | EXIT (SL)       | 14720.00   | -32.00     | SL Hit (Close 14720 >= SL 14692.88)
+290   | 2025-11-25 09:54:00  | ENTER LONG      | 14720.00   | 0.00       | SL Reversal Entry
+290   | 2025-11-25 10:06:00  | EXIT (Reversal) | 14692.00   | -28.00     | Reversed to SHORT
+291   | 2025-11-25 10:06:00  | ENTER SHORT     | 14692.00   | 0.00       | Reversal Entry (Close 14692 < VWAP 14694.79)
+291   | 2025-11-25 10:09:00  | EXIT (Reversal) | 14703.00   | -11.00     | Reversed to LONG
+292   | 2025-11-25 10:09:00  | ENTER LONG      | 14703.00   | 0.00       | Reversal Entry (Close 14703 > VWAP 14694.78)
+292   | 2025-11-25 10:18:00  | EXIT (Reversal) | 14691.00   | -12.00     | Reversed to SHORT
+293   | 2025-11-25 10:18:00  | ENTER SHORT     | 14691.00   | 0.00       | Reversal Entry (Close 14691 < VWAP 14694.78)
+293   | 2025-11-25 15:00:00  | EXIT (Square Off) | 14406.00   | 285.00     | Auto Square Off at 15:00:00
+294   | 2025-11-26 09:15:00  | ENTER LONG      | 14523.00   | 0.00       | Fresh Entry (Close 14523 > VWAP 14477.00)
+294   | 2025-11-26 15:00:00  | EXIT (Square Off) | 14825.00   | 302.00     | Auto Square Off at 15:00:00
+295   | 2025-11-27 09:15:00  | ENTER SHORT     | 14796.00   | 0.00       | Fresh Entry (Close 14796 < VWAP 14818.67)
+295   | 2025-11-27 09:18:00  | EXIT (Reversal) | 14834.00   | -38.00     | Reversed to LONG
+296   | 2025-11-27 09:18:00  | ENTER LONG      | 14834.00   | 0.00       | Reversal Entry (Close 14834 > VWAP 14815.64)
+296   | 2025-11-27 09:36:00  | EXIT (SL)       | 14810.00   | -24.00     | SL Hit (Close 14810 <= SL 14833.74)
+297   | 2025-11-27 09:36:00  | ENTER SHORT     | 14810.00   | 0.00       | SL Reversal Entry
+297   | 2025-11-27 15:00:00  | EXIT (Square Off) | 14649.00   | 161.00     | Auto Square Off at 15:00:00
+298   | 2025-11-28 09:15:00  | ENTER SHORT     | 14565.00   | 0.00       | Fresh Entry (Close 14565 < VWAP 14596.33)
+298   | 2025-11-28 09:24:00  | EXIT (Reversal) | 14589.00   | -24.00     | Reversed to LONG
+299   | 2025-11-28 09:24:00  | ENTER LONG      | 14589.00   | 0.00       | Reversal Entry (Close 14589 > VWAP 14570.24)
+299   | 2025-11-28 09:27:00  | EXIT (Reversal) | 14535.00   | -54.00     | Reversed to SHORT
+300   | 2025-11-28 09:27:00  | ENTER SHORT     | 14535.00   | 0.00       | Reversal Entry (Close 14535 < VWAP 14568.70)
+300   | 2025-11-28 09:39:00  | EXIT (Reversal) | 14569.00   | -34.00     | Reversed to LONG
+301   | 2025-11-28 09:39:00  | ENTER LONG      | 14569.00   | 0.00       | Reversal Entry (Close 14569 > VWAP 14565.83)
+301   | 2025-11-28 09:42:00  | EXIT (Reversal) | 14565.00   | -4.00      | Reversed to SHORT
+302   | 2025-11-28 09:42:00  | ENTER SHORT     | 14565.00   | 0.00       | Reversal Entry (Close 14565 < VWAP 14565.86)
+302   | 2025-11-28 09:48:00  | EXIT (Reversal) | 14572.00   | -7.00      | Reversed to LONG
+303   | 2025-11-28 09:48:00  | ENTER LONG      | 14572.00   | 0.00       | Reversal Entry (Close 14572 > VWAP 14565.89)
+303   | 2025-11-28 09:54:00  | EXIT (Reversal) | 14565.00   | -7.00      | Reversed to SHORT
+304   | 2025-11-28 09:54:00  | ENTER SHORT     | 14565.00   | 0.00       | Reversal Entry (Close 14565 < VWAP 14565.96)
+304   | 2025-11-28 10:03:00  | EXIT (SL)       | 14582.00   | -17.00     | SL Hit (Close 14582 >= SL 14573.00)
+305   | 2025-11-28 10:03:00  | ENTER LONG      | 14582.00   | 0.00       | SL Reversal Entry
+305   | 2025-11-28 10:09:00  | EXIT (Reversal) | 14565.00   | -17.00     | Reversed to SHORT
+306   | 2025-11-28 10:09:00  | ENTER SHORT     | 14565.00   | 0.00       | Reversal Entry (Close 14565 < VWAP 14566.38)
+306   | 2025-11-28 10:33:00  | EXIT (SL)       | 14560.00   | 5.00       | SL Hit (Close 14560 >= SL 14559.29)
+307   | 2025-11-28 10:33:00  | ENTER LONG      | 14560.00   | 0.00       | SL Reversal Entry
+307   | 2025-11-28 13:36:00  | EXIT (SL)       | 14587.00   | 27.00      | SL Hit (Close 14587 <= SL 14607.54)
+308   | 2025-11-28 13:36:00  | ENTER SHORT     | 14587.00   | 0.00       | SL Reversal Entry
+308   | 2025-11-28 15:00:00  | EXIT (Square Off) | 14592.00   | -5.00      | Auto Square Off at 15:00:00
+
+--- SUMMARY ---
+Total Trades: 616
+Total Cumulative PnL: 210.00
