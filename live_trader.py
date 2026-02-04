@@ -105,7 +105,13 @@ else:
     logger.critical("FAILED TO SELECT ANY OPTIONS after retries. Manual Intervention Required.")
     # fallback to a hardcoded generic ATM if absolutely needed, but safer to do nothing.
     # TRADING_INSTRUMENTS = [] (Empty list means no trading)
-    pass
+    # FOR VERIFICATION: Add a dummy symbol
+    TRADING_INSTRUMENTS.append({
+        "symbol": "NSE:NIFTY26FEB24500CE",
+        "type": "CE",
+        "state": {'trigger_candle': None, 'trigger_rsi': 0, 'steps': 0}
+    })
+    logger.info("Added Dummy Symbol for Verification: NSE:NIFTY26FEB24500CE")
 
 def get_position_from_cache(all_positions, symbol):
     """
@@ -288,7 +294,8 @@ def run_trading_loop():
     start_json_updater()
 
     # Reuse Executor for Performance (Avoids setup overhead)
-    executor = concurrent.futures.ThreadPoolExecutor(max_workers=20)
+    # REDUCED WORKERS TO PREVENT 429 RATE LIMITS
+    executor = concurrent.futures.ThreadPoolExecutor(max_workers=4)
     
     # --- HISTORY DATA INITIALIZATION ---
     history_map = {}
@@ -402,6 +409,7 @@ def run_trading_loop():
                         sym = instrument['symbol']
                         logger.info(f"Saving candles for {sym}...")
                         try:
+                            
                             # Fetch Full Day
                             data = history.get_history(token, sym, TIMEFRAME, today_str, today_str)
                             candles = data.get("candles", [])
@@ -411,27 +419,100 @@ def run_trading_loop():
                                 with open(file_path, "w", newline='') as f:
                                     writer = csv.writer(f)
                                     writer.writerow(["Timestamp", "Open", "High", "Low", "Close", "Volume"])
-                                    writer.writerows(candles)
+                                    for c in candles:
+                                        # Format Timestamp
+                                        ts = c[0]
+                                        if ts > 9999999999: ts /= 1000
+                                        readable_time = datetime.datetime.fromtimestamp(ts).strftime("%Y-%m-%d %H:%M:%S")
+                                        row = [readable_time, c[1], c[2], c[3], c[4], c[5]]
+                                        writer.writerow(row)
                         except Exception as e:
                             logger.error(f"Failed to save candles for {sym}: {e}")
 
-                    # 2. Save Trades (Copy from trade_history.csv)
+                    # 2. Save Trades (Processed & Consolidated)
                     trades_dir = "daily_data/trades"
                     os.makedirs(trades_dir, exist_ok=True)
                     daily_trade_file = os.path.join(trades_dir, f"{today_str}_trades.csv")
                     
                     if os.path.exists("static/trade_history.csv"):
-                         with open("static/trade_history.csv", "r") as f_in, open(daily_trade_file, "w", newline='') as f_out:
-                             reader = csv.reader(f_in)
-                             writer = csv.writer(f_out)
-                             headers = next(reader, None)
-                             if headers:
-                                 writer.writerow(headers)
-                                 for row in reader:
-                                     # Check if row belongs to today? 
-                                     # Timestamp format: 2026-02-02 11:15:08
-                                     if row and len(row) > 0 and row[0].startswith(today_str):
-                                          writer.writerow(row)
+                        # Process raw log into consolidated trades
+                        raw_rows = []
+                        with open("static/trade_history.csv", "r") as f:
+                            reader = csv.reader(f)
+                            header = next(reader, None)
+                            if header:
+                                raw_rows = list(reader)
+                        
+                        processed_trades = []
+                        open_positions = {} # Symbol -> {entry data}
+                        
+                        # Sort by timestamp to ensure order (just in case)
+                        # raw_rows.sort(key=lambda x: x[0]) 
+                        
+                        for row in raw_rows:
+                            if len(row) < 6: continue
+                            ts, sym, action, price, qty, product = row
+                            
+                            # Filter for today if needed (OPTIONAL, assuming file is appended forever? Or cleared daily?)
+                            # If cleared daily or user wants full history, we can keep all. 
+                            # Let's filter for TODAY to keep file specific.
+                            if not ts.startswith(today_str):
+                                continue
+
+                            try:
+                                price = float(price)
+                                qty = int(qty)
+                            except:
+                                continue
+                                
+                            if action == "SELL":
+                                open_positions[sym] = {
+                                    "Entry Time": ts,
+                                    "Entry Price": price,
+                                    "Qty": qty,
+                                    "Side": "SHORT"
+                                }
+                            elif "EXIT" in action:
+                                if sym in open_positions:
+                                    entry = open_positions.pop(sym)
+                                    
+                                    # Calculate PnL
+                                    pnl = 0.0
+                                    if "PnL:" in product:
+                                        try:
+                                            pnl = float(product.split("PnL:")[1].strip())
+                                        except:
+                                            pass
+                                    else:
+                                        pnl = (entry["Entry Price"] - price) * qty
+                                    
+                                    processed_trades.append({
+                                        "Entry Time": entry["Entry Time"],
+                                        "Symbol": sym,
+                                        "Side": entry["Side"],
+                                        "Qty": qty,
+                                        "Entry Price": entry["Entry Price"],
+                                        "Exit Time": ts,
+                                        "Exit Price": price,
+                                        "PnL": pnl
+                                    })
+                        
+                        # Sort by Exit Time
+                        processed_trades.sort(key=lambda x: x["Exit Time"])
+                        
+                        # Calculate Cumulative PnL
+                        running_pnl = 0.0
+                        
+                        with open(daily_trade_file, "w", newline='') as f_out:
+                             writer = csv.DictWriter(f_out, fieldnames=["Entry Time", "Symbol", "Side", "Qty", "Entry Price", "Exit Time", "Exit Price", "PnL", "Cumulative PnL"])
+                             writer.writeheader()
+                             
+                             for t in processed_trades:
+                                 running_pnl += t["PnL"]
+                                 t["Cumulative PnL"] = round(running_pnl, 2)
+                                 writer.writerow(t)
+
+                        logger.info(f"Processed {len(processed_trades)} consolidated trades to {daily_trade_file}")
                     
                     logger.info("Daily Data Dump Completed.")
                     
@@ -750,32 +831,25 @@ def run_trading_loop():
                 log_trade_csv(target_sym, "SELL", ltp_est, QTY, "SIMULATED")
 
             # Check CE Signals
+            # ONLY respect signals from the ACTIVE SYMBOL
             ce_signals = [r for r in scan_results if "CE" in r['symbol'] and r['action'] == "ENTER_SHORT"]
-            if ce_signals:
-                trigger = ce_signals[0] # Take first one
-                if best_ce_sym:
-                    active_data = next((r for r in scan_results if r['symbol'] == best_ce_sym), None)
-                    if active_data:
-                        final_sl = active_data['sl'] if active_data['action'] == "ENTER_SHORT" else active_data['last_candle_high']
-                        execute_trade_on(best_ce_sym, final_sl, trigger['symbol'])
-                    else:
-                        logger.warning(f"Active CE {best_ce_sym} not found in scan results!")
-                else:
-                     logger.warning("No Active CE identified to trade!")
+            if ce_signals and best_ce_sym:
+                 trigger = ce_signals[0]
+                 # SIGNAL VALIDATION: The trigger MUST be the active symbol
+                 if trigger['symbol'] == best_ce_sym:
+                     execute_trade_on(best_ce_sym, trigger['sl'], trigger['symbol'])
+                 else:
+                     logger.info(f"Ignored Signal on {trigger['symbol']} (Not Active Target {best_ce_sym})")
 
             # Check PE Signals
             pe_signals = [r for r in scan_results if "PE" in r['symbol'] and r['action'] == "ENTER_SHORT"]
-            if pe_signals:
-                trigger = pe_signals[0]
-                if best_pe_sym:
-                    active_data = next((r for r in scan_results if r['symbol'] == best_pe_sym), None)
-                    if active_data:
-                        final_sl = active_data['sl'] if active_data['action'] == "ENTER_SHORT" else active_data['last_candle_high']
-                        execute_trade_on(best_pe_sym, final_sl, trigger['symbol'])
-                    else:
-                        logger.warning(f"Active PE {best_pe_sym} not found in scan results!")
-                else:
-                     logger.warning("No Active PE identified to trade!")
+            if pe_signals and best_pe_sym:
+                 trigger = pe_signals[0]
+                 # SIGNAL VALIDATION: The trigger MUST be the active symbol
+                 if trigger['symbol'] == best_pe_sym:
+                     execute_trade_on(best_pe_sym, trigger['sl'], trigger['symbol'])
+                 else:
+                     logger.info(f"Ignored Signal on {trigger['symbol']} (Not Active Target {best_pe_sym})")
             
             # UPDATE GLOBAL STATE (JSON Updater thread handles writing algo_status.json)
             if scan_results:

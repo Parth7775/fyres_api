@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Auto refresh every 5 seconds
     setInterval(fetchPositions, 5000);
     setInterval(fetchHistory, 5000); // Poll history too
-    setInterval(fetchAlgoStatus, 50); // Polling Algo status faster (50ms) - Ultra Fast
+    setInterval(fetchAlgoStatus, 1000); // Polling Algo status (1s)
 });
 
 async function fetchPositions() {
@@ -71,7 +71,7 @@ async function fetchPositions() {
 
 function generateTable(positions) {
     let html = `
-        <table>
+        <table class="algo-table">
             <thead>
                 <tr>
                     <th>Symbol</th>
@@ -90,12 +90,12 @@ function generateTable(positions) {
         const ltp = parseFloat(pos.ltp);
         html += `
             <tr>
-                <td>${pos.symbol}</td>
+                <td style="font-weight: 500;">${pos.symbol}</td>
                 <td>${pos.netQty}</td>
                 <td>${parseFloat(pos.avgPrice).toFixed(2)}</td>
                 <td>${ltp ? ltp.toFixed(2) : '-'}</td>
                 <td class="pnl-value ${pnlClass}">${pnl.toFixed(2)}</td>
-                <td style="font-size: 11px;">${pos.productType}</td>
+                <td><span class="tag tag-tracking">${pos.productType}</span></td>
             </tr>
         `;
     });
@@ -238,7 +238,7 @@ async function fetchHistory() {
                     <td>${t.entryPrice} <span style="font-size:0.8em; color:#666">@ ${t.entryTime}</span></td>
                     <td>${t.exitPrice} <span style="font-size:0.8em; color:#666">${t.exitTime !== '-' ? '@ ' + t.exitTime : ''}</span></td>
                     <td class="${pnlClass}" style="font-weight:600">${pnlDisplay}</td>
-                    <td><span class="tag" style="background:rgba(255,255,255,0.05)">${t.status}</span></td>
+                    <td><span class="tag" style="background:rgba(0,0,0,0.05); color:var(--text-secondary)">${t.status}</span></td>
                 </tr>
             `;
         });
@@ -348,8 +348,52 @@ async function fetchAlgoStatus() {
         html += '</tbody></table>';
         container.innerHTML = html;
 
+        // Update Watchlist Sidebar
+        updateWatchlist(data.scan_results);
+
     } catch (error) {
         console.warn("Algo status fetch failed (script might not be running):", error);
         document.getElementById('algo-timestamp').textContent = "Offline";
     }
+}
+
+function updateWatchlist(scanResults) {
+    const container = document.getElementById('watchlist-items');
+    if (!container) return;
+
+    if (!scanResults || scanResults.length === 0) {
+        container.innerHTML = '<div style="padding: 15px; text-align: center; color: var(--text-secondary);">No active symbols</div>';
+        return;
+    }
+
+    // Sort: Active first
+    const sorted = [...scanResults].sort((a, b) => (b.is_active === true) - (a.is_active === true));
+
+    let html = '';
+    sorted.forEach(item => {
+        const symbol = item.symbol.replace('NSE:', '');
+        const isCall = item.type === "CE";
+        const ltp = item.ltp > 0 ? item.ltp.toFixed(2) : '-';
+        const rsiColor = item.rsi > 70 ? '#ffb74d' : '#888';
+
+        // Dynamic Class for Price Change (Simulation) -> In real app, we need prev close. 
+        // For now, just grey/white.
+
+        const activeClass = item.is_active ? 'border-left: 3px solid var(--accent-color); background: rgba(255, 255, 255, 0.05);' : '';
+
+        html += `
+            <div style="padding: 10px 15px; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; align-items: center; ${activeClass}">
+                <div>
+                    <div style="font-weight: 500; font-size: 13px; color: #e1e1e1;">${symbol}</div>
+                    <div style="font-size: 11px; color: ${isCall ? 'var(--success-color)' : 'var(--error-color)'}; margin-top: 2px;">${item.type}</div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-weight: 600; font-size: 13px;">${ltp}</div>
+                    <div style="font-size: 10px; color: ${rsiColor}; margin-top: 2px;">RSI: ${item.rsi}</div>
+                </div>
+            </div>
+        `;
+    });
+
+    container.innerHTML = html;
 }

@@ -4,125 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fyers Trading Dashboard</title>
+    <title>Antigravity Trader</title>
     <link rel="stylesheet" href="/static/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>Antigravity Trader</h1>
-            <div style="display: flex; gap: 10px; align-items: center;">
-                <span id="connection-status" class="status-badge">Checking API...</span>
-                <button onclick="fetchPositions()" class="refresh-btn">Refresh</button>
-            </div>
-        </header>
-
-        <div class="dashboard-grid">
-            <!-- Positions Section -->
-            <div class="card">
-                <h2>Open Positions</h2>
-                <div id="positions-container">
-                    <p style="color: var(--text-secondary); text-align: center;">Loading positions...</p>
-                </div>
-                <div id="total-pnl-container" class="total-pnl">
-                    Total P&L: <span id="total-pnl-value">0.00</span>
+    <div class="app-container">
+        <!-- Top Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="brand-logo">Antigravity</div>
+                <div class="market-indices">
+                    <div class="index-item">
+                        <span class="index-name">NIFTY 50</span>
+                        <span class="index-value">23,456.70</span>
+                    </div>
+                    <div class="index-item">
+                        <span class="index-name">SENSEX</span>
+                        <span class="index-value">78,123.45</span>
+                    </div>
                 </div>
             </div>
-
-            <!-- Algo Monitor Section -->
-            <div class="card">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <h2>Algo Monitor</h2>
-                    <span id="algo-timestamp"
-                        style="font-size: 0.8em; color: var(--text-secondary);">Connecting...</span>
-                </div>
-
-                <div id="algo-container" style="overflow-x: auto; margin-top: 10px;">
-                    <p style="color: var(--text-secondary); text-align: center;">Waiting for Algo Status...</p>
-                </div>
-
-                <style>
-                    .algo-table {
-                        width: 100%;
-                        border-collapse: collapse;
-                    }
-
-                    .algo-table th,
-                    .algo-table td {
-                        padding: 10px;
-                        text-align: left;
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-                        font-size: 0.9em;
-                    }
-
-                    .algo-table th {
-                        color: var(--text-secondary);
-                        font-weight: 500;
-                    }
-
-                    .tag {
-                        padding: 4px 8px;
-                        border-radius: 4px;
-                        font-size: 0.75em;
-                        font-weight: 600;
-                        letter-spacing: 0.5px;
-                    }
-
-                    .tag-active {
-                        background: rgba(64, 196, 255, 0.15);
-                        color: #40c4ff;
-                        border: 1px solid rgba(64, 196, 255, 0.3);
-                    }
-
-                    .tag-tracking {
-                        background: rgba(255, 255, 255, 0.05);
-                        color: #888;
-                        border: 1px solid rgba(255, 255, 255, 0.1);
-                    }
-
-                    .tag-ce {
-                        color: #00e676;
-                    }
-
-                    .tag-pe {
-                        color: #ff5252;
-                    }
-
-                    .signal-triggered {
-                        background: rgba(255, 82, 82, 0.2);
-                        color: #ff5252;
-                    }
-                </style>
+            <div class="nav-user">
+                <span id="connection-status" class="tag"
+                    style="background:var(--success-color); color:white;">Connected</span>
+                <span class="user-id">USER123</span>
             </div>
-            <!-- Trade History Section -->
-            <div class="card" style="margin-top: 20px;">
-                <h2>Trade History (Daily Log)</h2>
-                <div id="history-container" style="max-height: 300px; overflow-y: auto;">
-                    <table class="algo-table">
-                        <thead>
-                            <tr>
-                                <th>Time</th>
-                                <th>Type</th>
-                                <th>Symbol</th>
-                                <th>Action</th>
-                                <th>Price</th>
-                                <th>Info / PnL</th>
-                            </tr>
-                        </thead>
-                        <tbody id="history-body">
-                            <tr>
-                                <td colspan="5" style="text-align:center">Loading...</td>
-                            </tr>
-                        </tbody>
-                    </table>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Sidebar / Watchlist -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <span>Watchlist</span>
+                    <span>7/50</span>
                 </div>
-            </div>
+                <div id="watchlist-items" style="padding: 0;">
+                    <!-- Dynamic Watchlist Items -->
+                    <div style="padding: 15px; color: var(--text-secondary); text-align: center; font-size: 12px;">
+                        Loading watchlist...
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Dashboard Content -->
+            <main class="dashboard-area">
+
+                <!-- Positions Section -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Positions</h3>
+                        <div class="flex-row">
+                            <span class="text-muted" style="font-size: 11px;">Day's P&L</span>
+                            <span id="total-pnl-value" class="font-bold" style="font-size: 14px;">0.00</span>
+                            <button onclick="fetchPositions()" class="btn-refresh">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M23 4v6h-6M1 20v-6h6"></path>
+                                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="positions-container">
+                        <!-- Positions Table -->
+                        <table class="algo-table">
+                            <thead>
+                                <tr>
+                                    <th>Instrument</th>
+                                    <th>Qty.</th>
+                                    <th>Avg.</th>
+                                    <th>LTP</th>
+                                    <th>P&L</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="5"
+                                        style="text-align: center; padding: 20px; color: var(--text-secondary);">
+                                        No open positions
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Algo Monitor Section -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Orders / Algo Monitor</h3>
+                        <span id="algo-timestamp"
+                            style="font-size: 11px; color: var(--text-secondary);">Syncing...</span>
+                    </div>
+
+                    <div id="algo-container" style="min-height: 100px;">
+                        <p style="text-align:center; padding: 20px; color: var(--text-secondary);">Waiting for Algo
+                            Status...</p>
+                    </div>
+                </div>
+
+                <!-- Trade History Section -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Trade History</h3>
+                    </div>
+                    <div id="history-container" style="max-height: 300px; overflow-y: auto;">
+                        <table class="algo-table">
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Type</th>
+                                    <th>Symbol</th>
+                                    <th>Action</th>
+                                    <th>Price</th>
+                                    <th>Info / PnL</th>
+                                </tr>
+                            </thead>
+                            <tbody id="history-body">
+                                <tr>
+                                    <td colspan="6" style="text-align:center; padding: 15px;">Loading history...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </main>
         </div>
     </div>
 
     <script src="/static/js/script.js"></script>
+    <!-- Inline styles for dynamic content logic (compat with script.js) -->
+    <style>
+        /* Maintain compat with classes used in script.js if any unique ones exist */
+        .algo-table {
+            width: 100%;
+        }
+
+        .negative {
+            color: var(--error-color);
+        }
+
+        .positive {
+            color: var(--success-color);
+        }
+    </style>
 </body>
 
 </html>

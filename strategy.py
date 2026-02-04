@@ -1,7 +1,8 @@
-import datetime
+import logging
 
-
-
+# Configure Logger
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("Strategy")
 
 def check_rsi_signal(candle, rsi_value, current_position_side, state):
     """
@@ -35,7 +36,10 @@ def check_rsi_signal(candle, rsi_value, current_position_side, state):
         if trigger_candle:
             trigger_low = trigger_candle[3]
             trigger_high = trigger_candle[2]
-            print(f"STRATEGY DEBUG: Close {close} < Low {trigger_low}?")
+            
+            # LOGGING: Critical for debugging missed trades
+            logger.info(f"STRATEGY DEBUG: Close {close} < Trigger Low {trigger_low}? (RSI was {state.get('trigger_rsi',0):.2f})")
+            
             if close < trigger_low:
                 # CONFIRMED BREAKDOWN
                 action = {

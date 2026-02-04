@@ -22,8 +22,14 @@ def save_daily_data():
         {"Time": "13:13", "Symbol": "NSE:NIFTY2620324400CE", "Side": "SHORT", "Qty": 65, "Entry": 557.20, "ExitTime": "13:43", "ExitPrice": 579.00, "PnL": -1417.00}
     ]
     
+    # Calculate Cumulative PnL
+    cumulative_pnl = 0.0
+    for t in trades:
+        cumulative_pnl += t["PnL"]
+        t["Cumulative PnL"] = cumulative_pnl
+
     with open(trades_file, "w", newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=["Time", "Symbol", "Side", "Qty", "Entry", "ExitTime", "ExitPrice", "PnL"])
+        writer = csv.DictWriter(f, fieldnames=["Time", "Symbol", "Side", "Qty", "Entry", "ExitTime", "ExitPrice", "PnL", "Cumulative PnL"])
         writer.writeheader()
         writer.writerows(trades)
         
@@ -50,7 +56,12 @@ def save_daily_data():
                 writer = csv.writer(f)
                 writer.writerow(["Timestamp", "Open", "High", "Low", "Close", "Volume"])
                 for c in candles:
-                    writer.writerow(c)
+                    # Format Timestamp
+                    ts = c[0]
+                    if ts > 9999999999: ts /= 1000
+                    readable_time = datetime.datetime.fromtimestamp(ts).strftime("%Y-%m-%d %H:%M:%S")
+                    row = [readable_time, c[1], c[2], c[3], c[4], c[5]]
+                    writer.writerow(row)
             print(f"Saved {len(candles)} candles to {file_path}")
         else:
             print(f"No candles found for {sym}")
