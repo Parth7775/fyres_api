@@ -37,15 +37,32 @@ import market_data
 import json
 
 # Configure Logging
-logging.basicConfig(
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    level=logging.INFO,
-    handlers=[
-        logging.FileHandler("live_trading.log"),
-        logging.StreamHandler()
-    ]
-)
+# Configure Logging
+# logging.basicConfig(
+#     format='%(asctime)s - %(levelname)s - %(message)s',
+#     level=logging.INFO,
+#     handlers=[
+#         logging.FileHandler("live_trading.log"),
+#         logging.StreamHandler()
+#     ]
+# )
 logger = logging.getLogger("LiveTrader")
+logger.setLevel(logging.INFO)
+
+# Ensure File Handler exists (Fix for app.py taking over config)
+has_file_handler = False
+for h in logger.handlers:
+    if isinstance(h, logging.FileHandler):
+        has_file_handler = True
+        break
+        
+if not has_file_handler:
+    fh = logging.FileHandler("live_trading.log")
+    fh.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+    logger.addHandler(fh)
+    sh = logging.StreamHandler()
+    sh.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+    logger.addHandler(sh)
 
 # GLOBAL VARIABLES
 LTP_CACHE = {} # {symbol: ltp}
@@ -579,9 +596,17 @@ def run_trading_loop():
                     # logger.info(f"LTP Map Populated with {len(ltp_map)} items.") # Verbose
                     logger.info(f"ACTIVE TRADING TARGETS (Closest to 500): CE={best_ce_sym} | PE={best_pe_sym}")
                 except Exception as e:
-                    if "API_RATE_LIMIT" in str(e):
-                         logger.critical("RATE LIMIT DETECTED (429/403). Pausing for 15 minutes...")
-                         time.sleep(900)
+                    err_str = str(e)
+                    if "API_RATE_LIMIT 429" in err_str:
+                         logger.critical("TRUE RATE LIMIT (429). Pausing for 2 minutes (reduced)...")
+                         time.sleep(120)
+                    elif "API_RATE_LIMIT 403" in err_str:
+                         logger.critical("API FORBIDDEN (403). Token likely invalid. Stopping loop.")
+                         break # Stop loop, don't sleep
+                    elif "API_RATE_LIMIT" in err_str:
+                         # Fallback for unknown code
+                         logger.warning(f"Rate Limit Warning: {err_str}")
+                         time.sleep(5)
                     else:
                         logger.error(f"Error fetching quotes: {e}. Defaulting to allowing all.")
                     
@@ -770,6 +795,17 @@ def run_trading_loop():
                     logger.info(f"Position already open for {target_sym}. Skipping duplicate.")
                     return
 
+                # --- SINGLE TRADE PER SIDE CONSTRAINT ---
+                target_type = "CE" if "CE" in target_sym else "PE"
+                same_side_open = any(
+                    (target_type in p['symbol']) and p.get('isOpen', True) 
+                    for p in paper_positions
+                )
+                if same_side_open:
+                     logger.warning(f"BLOCKED: A {target_type} position is already OPEN. Single trade per side rule enforced.")
+                     return
+                # ----------------------------------------
+
                 # 1. ATTEMPT REAL ORDER (If not Dry Run)
                 if not DRY_RUN:
                     # Place Order
@@ -852,6 +888,7 @@ def run_trading_loop():
                      logger.info(f"Ignored Signal on {trigger['symbol']} (Not Active Target {best_pe_sym})")
             
             # UPDATE GLOBAL STATE (JSON Updater thread handles writing algo_status.json)
+            logger.info(f"DEBUG: Updating GLOBAL_SCAN_RESULTS with {len(scan_results)} items")
             if scan_results:
                 GLOBAL_SCAN_RESULTS = scan_results
             

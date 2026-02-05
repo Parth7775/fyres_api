@@ -60,7 +60,7 @@ def find_options_with_price(spot_price, check_date, price_min=400, price_max=600
     # But if I search "26203" options on Jan 23, they might be illiquid.
     
     # Let's try to detect valid expiry or just use a fixed list for this specific user request.
-    first_check_expiry = "26203"
+    first_check_expiry = "26210" # Updated to Feb 10 expiry based on CSV
     # Fallback/Alternatives could be checked but sticking to known working one.
     expiry_str = first_check_expiry
     
@@ -241,19 +241,30 @@ def run_rsi_strategy(symbol, date_str):
     # Print Results
     daily_pnl = 0
     if not trades:
-        print(f"No trades for {symbol}")
+        print(f"No completed trades for {symbol}")
     else:
         for t in trades:
             print(t)
             if 'pnl' in t:
                 daily_pnl += t['pnl']
-                
+    
+    # Check for Running Trade
+    if position == 'SHORT':
+        print(f"*** RUNNING TRADE ***")
+        print(f"Symbol: {symbol}")
+        print(f"Type: SHORT")
+        print(f"Entry Price: {entry_price}")
+        print(f"Current Price: {curr_close}") 
+        print(f"Stop Loss: {stop_loss}")
+        running_pnl = entry_price - curr_close
+        print(f"Running P&L: {running_pnl}")
+        daily_pnl += running_pnl # Optionally add running P&L
+
     return daily_pnl
 
 if __name__ == "__main__":
     # Backtest Days
-    dates = ["2026-01-30", "2026-01-29", "2026-01-28", "2026-01-27", "2026-01-23"]
-    # holidays = Jan 26. Jan 24/25 weekend.
+    dates = ["2026-02-04"]
     
     total_pnl = 0
     
@@ -292,5 +303,5 @@ if __name__ == "__main__":
                 if pnl:
                     total_pnl += pnl
         
-    print(f"\nTotal P&L over 5 days: {total_pnl}")
+    print(f"\nTotal P&L for {dates}: {total_pnl}")
 

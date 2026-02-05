@@ -1,3 +1,15 @@
+import ssl
+# --- SSL CERTIFICATE FIX FOR MACOS ---
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
+    if hasattr(ssl, 'create_default_context'):
+        ssl.create_default_context = _create_unverified_https_context
+# -------------------------------------
+
 from flask import Flask, render_template, jsonify, request
 import main
 import portfolio
